@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="242" viewBox="0 0 1200 242">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="36" font-family="Arial" font-size="22" font-weight="700" fill="#111827">TTFT p95 by Workload and Concurrency</text>
+<text x="24" y="58" font-family="Arial" font-size="13" fill="#4b5563">Unit: seconds. Compare shapes, not just winners.</text>
+<text x="24" y="87" font-family="Arial" font-size="12" fill="#111827">prefill-heavy c1</text>
+<rect x="260" y="70" width="860.00" height="18" rx="2" fill="#dc2626"/>
+<text x="1128.00" y="84" font-family="Arial" font-size="12" fill="#111827">0.2046</text>
+<text x="24" y="115" font-family="Arial" font-size="12" fill="#111827">prefill-heavy c2</text>
+<rect x="260" y="98" width="350.73" height="18" rx="2" fill="#dc2626"/>
+<text x="618.73" y="112" font-family="Arial" font-size="12" fill="#111827">0.08343</text>
+<text x="24" y="143" font-family="Arial" font-size="12" fill="#111827">prefill-heavy c4</text>
+<rect x="260" y="126" width="535.51" height="18" rx="2" fill="#dc2626"/>
+<text x="803.51" y="140" font-family="Arial" font-size="12" fill="#111827">0.1274</text>
+<text x="24" y="171" font-family="Arial" font-size="12" fill="#111827">prefill-heavy c8</text>
+<rect x="260" y="154" width="625.42" height="18" rx="2" fill="#dc2626"/>
+<text x="893.42" y="168" font-family="Arial" font-size="12" fill="#111827">0.1488</text>
+</svg>

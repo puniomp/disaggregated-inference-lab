@@ -1,0 +1,57 @@
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches/build output
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Model and Hugging Face caches
+.cache/
+hf_cache/
+huggingface/
+.huggingface/
+models/
+model_cache/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+
+# Docker and runtime artifacts
+.docker/
+docker-data/
+*.pid
+*.sock
+*.tmp
+*.temp
+.tmp/
+tmp/
+
+# Logs: keep benchmark outputs/repro metadata, ignore runtime logs
+logs/
+*.log
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local transfer archives
+*.tgz
+*.tar.gz
+*.zip

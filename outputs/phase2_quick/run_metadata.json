@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-04T06:52:15.250228+00:00",
+  "base_url": "http://localhost:30000",
+  "model": "qwen3-0.6b",
+  "workloads": "configs/workloads.json",
+  "profiles": [
+    "baseline"
+  ],
+  "concurrency": [
+    1,
+    2
+  ],
+  "requests_per_concurrency": 4,
+  "include_usage": true,
+  "disable_thinking": false,
+  "metric_notes": {
+    "ttft_s": "Time from immediately before HTTP request submission until first streamed content/reasoning chunk arrives.",
+    "request_tpot_s": "Request-level average over streamed generation interval. Uses completion_tokens when usage is returned; otherwise falls back to emitted stream chunk count.",
+    "inter_chunk_latency": "Measured between streamed chunks, not guaranteed to be a true per-token ITL distribution because a server chunk may contain zero, one, or multiple tokens.",
+    "throughput": "Aggregate output tokens per wall-clock second for a profile/concurrency group when completion token counts are available."
+  }
+}

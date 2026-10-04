@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROFILES="${PROFILES:-baseline}"
+CONCURRENCY="${CONCURRENCY:-1,2}"
+REQUESTS_PER_CONCURRENCY="${REQUESTS_PER_CONCURRENCY:-4}"
+OUT_DIR="${OUT_DIR:-outputs/phase2_quick}"
+
+PROFILES="$PROFILES" \
+CONCURRENCY="$CONCURRENCY" \
+REQUESTS_PER_CONCURRENCY="$REQUESTS_PER_CONCURRENCY" \
+OUT_DIR="$OUT_DIR" \
+bash scripts/run_phase2_benchmarks.sh

@@ -1,0 +1,99 @@
+===== date -u =====
+Sun Oct  4 07:19:59 UTC 2026
+===== hostname =====
+2d1a526835df
+===== pwd =====
+/workspace/inference-disaggregation-lab
+===== nvidia-smi =====
+Sun Oct  4 07:19:59 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.159.04             Driver Version: 580.159.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4090        On  |   00000000:01:00.0 Off |                  Off |
+|  0%   29C    P8              2W /  450W |   18790MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            8135      C   sglang::scheduler                     18780MiB |
++-----------------------------------------------------------------------------------------+
+===== gpu query =====
+index, name, driver_version, memory.total [MiB], memory.free [MiB], compute_cap
+0, NVIDIA GeForce RTX 4090, 580.159.04, 24564 MiB, 5292 MiB, 8.9
+===== python =====
+Python 3.12.3
+===== uv =====
+uv 0.9.0
+===== sglang version =====
+sglang 0.5.21
+===== pip freeze =====
+===== model_info =====
+{"model_path":"Qwen/Qwen3-0.6B","served_model_name":"qwen3-0.6b","tokenizer_path":"Qwen/Qwen3-0.6B","is_generation":true,"preferred_sampling_params":null,"weight_version":"default","load_format":"auto","reasoning_parser":null,"tool_call_parser":null,"disaggregation_mode":"null","has_image_understanding":false,"has_audio_understanding":false,"model_type":"qwen3","architectures":["Qwen3ForCausalLM"],"embedding":{"family":"none","task":"none","execution":"none","attention":"none","pooling":"model_defined","normalize":false,"postprocessor":"none","tokenizer_special_tokens":"model_default","supports_dimensions":false,"supports_token_embeddings":false,"supports_multimodal":false,"requires_embedding_flag":false,"auto_enable_embedding":false,"bcg_eligibility":"disabled","safe_disable_kv_cache":false,"safe_disable_radix_cache":false,"safe_disable_chunked_prefill":false,"enabled":false,"matryoshka_dimensions":[],"bcg":{"prefill_backend":"breakable","enabled":true,"capture_token_budget":4096,"capture_batch_sizes":[4,8,12,16,20,24,28,32,48,64,80,96,112,128,144,160,176,192,208,224,240,256,288,320,352,384,416,448,480,512,576,640,704,768,832,896,960,1024,1280,1536,1792,2048,2304,2560,2816,3072,3328,3584,3840,4096]},"cache":{"kv_cache_disabled":false,"radix_cache_disabled":false,"chunked_prefill_disabled":false}}}
+===== output files =====
+outputs/phase2_baseline_probe/charts/aggregate_output_tokens_per_s.svg
+outputs/phase2_baseline_probe/charts/latency_p95_s.svg
+outputs/phase2_baseline_probe/charts/request_tpot_p50_s.svg
+outputs/phase2_baseline_probe/charts/requests_per_s.svg
+outputs/phase2_baseline_probe/charts/ttft_p50_s.svg
+outputs/phase2_baseline_probe/charts/ttft_p95_s.svg
+outputs/phase2_baseline_probe/raw_all.csv
+outputs/phase2_baseline_probe/raw_all.jsonl
+outputs/phase2_baseline_probe/raw_baseline_c1.jsonl
+outputs/phase2_baseline_probe/raw_baseline_c2.jsonl
+outputs/phase2_baseline_probe/raw_baseline_c4.jsonl
+outputs/phase2_baseline_probe/raw_baseline_c8.jsonl
+outputs/phase2_baseline_probe/run_metadata.json
+outputs/phase2_baseline_probe/summary.csv
+outputs/phase2_baseline_probe/summary.json
+outputs/phase2_decode_probe/charts/aggregate_output_tokens_per_s.svg
+outputs/phase2_decode_probe/charts/latency_p95_s.svg
+outputs/phase2_decode_probe/charts/request_tpot_p50_s.svg
+outputs/phase2_decode_probe/charts/requests_per_s.svg
+outputs/phase2_decode_probe/charts/ttft_p50_s.svg
+outputs/phase2_decode_probe/charts/ttft_p95_s.svg
+outputs/phase2_decode_probe/raw_all.csv
+outputs/phase2_decode_probe/raw_all.jsonl
+outputs/phase2_decode_probe/raw_decode-heavy_c1.jsonl
+outputs/phase2_decode_probe/raw_decode-heavy_c2.jsonl
+outputs/phase2_decode_probe/raw_decode-heavy_c4.jsonl
+outputs/phase2_decode_probe/raw_decode-heavy_c8.jsonl
+outputs/phase2_decode_probe/run_metadata.json
+outputs/phase2_decode_probe/summary.csv
+outputs/phase2_decode_probe/summary.json
+outputs/phase2_prefill_probe/charts/aggregate_output_tokens_per_s.svg
+outputs/phase2_prefill_probe/charts/latency_p95_s.svg
+outputs/phase2_prefill_probe/charts/request_tpot_p50_s.svg
+outputs/phase2_prefill_probe/charts/requests_per_s.svg
+outputs/phase2_prefill_probe/charts/ttft_p50_s.svg
+outputs/phase2_prefill_probe/charts/ttft_p95_s.svg
+outputs/phase2_prefill_probe/raw_all.csv
+outputs/phase2_prefill_probe/raw_all.jsonl
+outputs/phase2_prefill_probe/raw_prefill-heavy_c1.jsonl
+outputs/phase2_prefill_probe/raw_prefill-heavy_c2.jsonl
+outputs/phase2_prefill_probe/raw_prefill-heavy_c4.jsonl
+outputs/phase2_prefill_probe/raw_prefill-heavy_c8.jsonl
+outputs/phase2_prefill_probe/run_metadata.json
+outputs/phase2_prefill_probe/summary.csv
+outputs/phase2_prefill_probe/summary.json
+outputs/phase2_quick/charts/aggregate_output_tokens_per_s.svg
+outputs/phase2_quick/charts/latency_p95_s.svg
+outputs/phase2_quick/charts/request_tpot_p50_s.svg
+outputs/phase2_quick/charts/requests_per_s.svg
+outputs/phase2_quick/charts/ttft_p50_s.svg
+outputs/phase2_quick/charts/ttft_p95_s.svg
+outputs/phase2_quick/raw_all.csv
+outputs/phase2_quick/raw_all.jsonl
+outputs/phase2_quick/raw_baseline_c1.jsonl
+outputs/phase2_quick/raw_baseline_c2.jsonl
+outputs/phase2_quick/run_metadata.json
+outputs/phase2_quick/summary.csv
+outputs/phase2_quick/summary.json
+outputs/repro/runpod_phase2_repro.txt

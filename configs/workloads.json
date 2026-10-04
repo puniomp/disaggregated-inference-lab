@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "baseline": {
+      "description": "Moderate prompt and moderate generation; sanity workload for latency and throughput.",
+      "approx_input_tokens": 128,
+      "max_output_tokens": 128
+    },
+    "prefill-heavy": {
+      "description": "Long prompt with short generation; stresses prompt processing and KV-cache creation.",
+      "approx_input_tokens": 4096,
+      "max_output_tokens": 128
+    },
+    "very-prefill-heavy": {
+      "description": "Very long prompt with medium generation; intended to expose long-prefill queueing and memory pressure.",
+      "approx_input_tokens": 8192,
+      "max_output_tokens": 500
+    },
+    "decode-heavy": {
+      "description": "Short prompt with long generation; stresses autoregressive decode.",
+      "approx_input_tokens": 128,
+      "max_output_tokens": 2000
+    }
+  }
+}

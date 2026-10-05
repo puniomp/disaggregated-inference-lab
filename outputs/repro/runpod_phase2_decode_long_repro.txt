@@ -1,0 +1,49 @@
+# Phase 2 decode-long RunPod reproducibility
+
+Captured at:
+2026-10-05T04:25:47+00:00
+
+Git HEAD:
+df1c8a815d29a6eeb489155bb0e0a91ea6bce820
+
+GPU:
+NVIDIA GeForce RTX 4090, 24564 MiB, driver 580.65.06
+CUDA shown by nvidia-smi: 13.0
+
+
+Python:
+Python 3.12.3
+
+SGLang:
+0.5.21
+
+Server model_info:
+{"model_path":"Qwen/Qwen3-0.6B","served_model_name":"qwen3-0.6b","tokenizer_path":"Qwen/Qwen3-0.6B","is_generation":true,"preferred_sampling_params":null,"weight_version":"default","load_format":"auto","reasoning_parser":null,"tool_call_parser":null,"disaggregation_mode":"null","has_image_understanding":false,"has_audio_understanding":false,"model_type":"qwen3","architectures":["Qwen3ForCausalLM"],"embedding":{"family":"none","task":"none","execution":"none","attention":"none","pooling":"model_defined","normalize":false,"postprocessor":"none","tokenizer_special_tokens":"model_default","supports_dimensions":false,"supports_token_embeddings":false,"supports_multimodal":false,"requires_embedding_flag":false,"auto_enable_embedding":false,"bcg_eligibility":"disabled","safe_disable_kv_cache":false,"safe_disable_radix_cache":false,"safe_disable_chunked_prefill":false,"enabled":false,"matryoshka_dimensions":[],"bcg":{"prefill_backend":"breakable","enabled":true,"capture_token_budget":4096,"capture_batch_sizes":[4,8,12,16,20,24,28,32,48,64,80,96,112,128,144,160,176,192,208,224,240,256,288,320,352,384,416,448,480,512,576,640,704,768,832,896,960,1024,1280,1536,1792,2048,2304,2560,2816,3072,3328,3584,3840,4096]},"cache":{"kv_cache_disabled":false,"radix_cache_disabled":false,"chunked_prefill_disabled":false}}}
+New output directories:
+outputs/phase2_decode_long_probe/charts/aggregate_output_tokens_per_s.svg
+outputs/phase2_decode_long_probe/charts/latency_p95_s.svg
+outputs/phase2_decode_long_probe/charts/request_tpot_p50_s.svg
+outputs/phase2_decode_long_probe/charts/requests_per_s.svg
+outputs/phase2_decode_long_probe/charts/ttft_p50_s.svg
+outputs/phase2_decode_long_probe/charts/ttft_p95_s.svg
+outputs/phase2_decode_long_probe/raw_all.csv
+outputs/phase2_decode_long_probe/raw_all.jsonl
+outputs/phase2_decode_long_probe/raw_decode-heavy_c1.jsonl
+outputs/phase2_decode_long_probe/raw_decode-heavy_c2.jsonl
+outputs/phase2_decode_long_probe/raw_decode-heavy_c4.jsonl
+outputs/phase2_decode_long_probe/raw_decode-heavy_c8.jsonl
+outputs/phase2_decode_long_probe/run_metadata.json
+outputs/phase2_decode_long_probe/summary.csv
+outputs/phase2_decode_long_probe/summary.json
+outputs/phase2_decode_long_validation/charts/aggregate_output_tokens_per_s.svg
+outputs/phase2_decode_long_validation/charts/latency_p95_s.svg
+outputs/phase2_decode_long_validation/charts/request_tpot_p50_s.svg
+outputs/phase2_decode_long_validation/charts/requests_per_s.svg
+outputs/phase2_decode_long_validation/charts/ttft_p50_s.svg
+outputs/phase2_decode_long_validation/charts/ttft_p95_s.svg
+outputs/phase2_decode_long_validation/raw_all.csv
+outputs/phase2_decode_long_validation/raw_all.jsonl
+outputs/phase2_decode_long_validation/raw_decode-heavy_c1.jsonl
+outputs/phase2_decode_long_validation/run_metadata.json
+outputs/phase2_decode_long_validation/summary.csv
+outputs/phase2_decode_long_validation/summary.json

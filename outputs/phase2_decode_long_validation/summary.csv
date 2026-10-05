@@ -1,0 +1,2 @@
+aggregate_output_tokens_per_s,completion_tokens_avg,completion_tokens_total,concurrency,error_requests,latency_p50_s,latency_p95_s,ok_requests,profile,request_tpot_p50_s,request_tpot_p95_s,requests,requests_per_s,ttft_p50_s,ttft_p95_s,wall_time_s
+245.71713747687323,2000.0,4000,1,0,8.136516272090375,11.854471391532568,2,decode-heavy,0.001969986058503255,0.0019728348141311554,2,0.12285856873843662,4.197662645019591,7.910229796636849,16.278880834579468

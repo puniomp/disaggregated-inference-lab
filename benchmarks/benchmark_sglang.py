@@ -36,6 +36,19 @@ class RequestSpec:
     prompt: str
 
 
+def long_decode_instruction(request_index: int) -> str:
+    return (
+        f"Profile=decode-heavy. Request={request_index}. "
+        "This is a sustained decode benchmark. Write exactly 180 numbered "
+        "entries about LLM inference serving. Each entry must be a standalone "
+        "sentence of 12 to 18 words. Start at 001 and continue sequentially. "
+        "Do not write an introduction, summary, conclusion, apology, or any "
+        "meta commentary. Do not stop early. Continue until entry 180.\n\n"
+        "Topic anchors: prefill, decode, KV cache, batching, scheduler, "
+        "latency, throughput, GPU memory, queueing, request concurrency."
+    )
+
+
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
@@ -59,7 +72,15 @@ def mean(values: list[float]) -> float | None:
     return statistics.fmean(values) if values else None
 
 
-def make_prompt(profile: str, approx_tokens: int, request_index: int) -> str:
+def make_prompt(
+    profile: str,
+    approx_tokens: int,
+    request_index: int,
+    prompt_style: str | None = None,
+) -> str:
+    if prompt_style == "long_numbered_generation":
+        return long_decode_instruction(request_index)
+
     # This is an approximation. The benchmark records prompt_tokens from the
     # server when available; use that value for analysis rather than assuming
     # the generator hit the target exactly.
@@ -301,7 +322,12 @@ def run_group(
             request_index=i,
             approx_input_tokens=int(profile_cfg["approx_input_tokens"]),
             max_output_tokens=int(profile_cfg["max_output_tokens"]),
-            prompt=make_prompt(profile, int(profile_cfg["approx_input_tokens"]), i),
+            prompt=make_prompt(
+                profile,
+                int(profile_cfg["approx_input_tokens"]),
+                i,
+                profile_cfg.get("prompt_style"),
+            ),
         )
         for i in range(total)
     ]

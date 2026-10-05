@@ -16,9 +16,10 @@
       "max_output_tokens": 500
     },
     "decode-heavy": {
-      "description": "Short prompt with long generation; stresses autoregressive decode.",
+      "description": "Short prompt with deliberately long structured generation; stresses sustained autoregressive decode.",
       "approx_input_tokens": 128,
-      "max_output_tokens": 2000
+      "max_output_tokens": 2000,
+      "prompt_style": "long_numbered_generation"
     }
   }
 }

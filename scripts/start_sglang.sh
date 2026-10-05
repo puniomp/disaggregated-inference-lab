@@ -10,6 +10,7 @@ VENV_DIR="${VENV_DIR:-$PROJECT_DIR/.venv}"
 LOG_DIR="${LOG_DIR:-$PROJECT_DIR/logs}"
 PID_FILE="${PID_FILE:-$LOG_DIR/sglang.pid}"
 LOG_FILE="${LOG_FILE:-$LOG_DIR/sglang.log}"
+SGLANG_EXTRA_ARGS="${SGLANG_EXTRA_ARGS:-}"
 
 if [ -d /workspace ]; then
   export HF_HOME="${HF_HOME:-/workspace/.cache/huggingface}"
@@ -45,12 +46,22 @@ echo "  served model name:  $SERVED_MODEL_NAME"
 echo "  URL:                http://localhost:$HOST_PORT"
 echo "  HF cache:           $HF_HOME"
 echo "  log file:           $LOG_FILE"
+if [ -n "$SGLANG_EXTRA_ARGS" ]; then
+  echo "  extra args:         $SGLANG_EXTRA_ARGS"
+fi
 echo
+
+EXTRA_ARGS=()
+if [ -n "$SGLANG_EXTRA_ARGS" ]; then
+  # Keep Phase 3 launch configuration visible while still allowing controlled A/B flags.
+  read -r -a EXTRA_ARGS <<< "$SGLANG_EXTRA_ARGS"
+fi
 
 nohup "$SGLANG_BIN" serve "$MODEL_PATH" \
   --served-model-name "$SERVED_MODEL_NAME" \
   --host "$HOST" \
   --port "$HOST_PORT" \
+  "${EXTRA_ARGS[@]}" \
   > "$LOG_FILE" 2>&1 &
 
 echo "$!" > "$PID_FILE"

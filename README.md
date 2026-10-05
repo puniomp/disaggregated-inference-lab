@@ -2,13 +2,14 @@
 
 Hands-on lab for learning modern LLM serving architecture through incremental experiments.
 
-Current scope: Phase 0 through Phase 2 only.
+Current scope: Phase 0 through Phase 3.
 
 - Phase 0 validates the architecture vocabulary and upstream documentation assumptions.
 - Phase 1 runs an aggregated SGLang baseline on one NVIDIA GPU.
 - Phase 2 benchmarks that aggregated SGLang baseline under different workloads and concurrency levels.
+- Phase 3 measures prefill/decode interference and compares no chunking against chunked prefill.
 
-This repository intentionally does not yet include Phase 3, Dynamo, NIXL, prefill/decode disaggregation, multi-GPU serving, or Kubernetes.
+This repository intentionally does not yet include Dynamo, NIXL, prefill/decode disaggregation, multi-GPU serving, or Kubernetes.
 
 ## Validated Environment
 
@@ -40,7 +41,7 @@ In this setup, prefill and decode run in the same SGLang worker on the same GPU.
 ## Repository Layout
 
 ```text
-benchmarks/                 Phase 2 benchmark client and chart generator
+benchmarks/                 Phase 2 benchmark client, Phase 3 interference client, and chart generator
 configs/                    Workload profile definitions
 docs/                       Architecture and phase documentation
 outputs/                    Preserved Phase 2 benchmark artifacts
@@ -52,6 +53,7 @@ Important documents:
 - `docs/architecture.md`: Phase 0 architecture validation.
 - `docs/phase1_sglang_baseline.md`: Phase 1 setup and validated run notes.
 - `docs/phase2_sglang_benchmarking.md`: Phase 2 methodology, measured results, interpretations, and limitations.
+- `docs/phase3_chunked_prefill_interference.md`: Phase 3 prefill/decode interference experiment and matched chunked-prefill A/B.
 
 ## Preserved Phase 2 Outputs
 
@@ -112,10 +114,16 @@ Completed probes:
 - prefill-heavy
 - decode-heavy
 
-Important limitation: the decode-heavy profile used `max_tokens=2000`, but the model naturally stopped at roughly 273-283 completion tokens. That result is preserved as a valid short-to-medium generation experiment, but it does not test sustained 2000-token decode behavior.
+The original decode-heavy probe naturally stopped at roughly 273-283 completion tokens, so a revised sustained-decode workload was added and validated at 2000 completion tokens.
 
-Next Phase 2 TODO:
+## Phase 3 Status
 
-- Redesign the decode-heavy workload so it reliably produces a much longer generation before rerunning it.
+Phase 3 is complete for the first matched chunked-prefill A/B:
 
-Do not infer GPU saturation, memory-bandwidth saturation, compute-bound behavior, chunked-prefill benefit, or P/D disaggregation benefit from the current Phase 2 results alone.
+- No-chunk baseline: `--chunked-prefill-size -1`
+- Chunked condition: `--chunked-prefill-size 4096`
+- Workload: four active sustained-decode requests, then one 10285-token long-prefill request injected at about 1.508 seconds
+
+Main result: chunked prefill reduced during-prefill p95/p99/max inter-stream-event gaps by about 34-35%, but it did not improve the worst synchronized stall. This suggests chunking mitigated part of the interference but did not fully isolate decode token delivery in the aggregated worker.
+
+Do not infer GPU saturation, memory-bandwidth saturation, compute-bound behavior, or P/D disaggregation benefit from the current results alone.

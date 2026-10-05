@@ -7,7 +7,7 @@ Current scope: Phase 0 through Phase 3.
 - Phase 0 validates the architecture vocabulary and upstream documentation assumptions.
 - Phase 1 runs an aggregated SGLang baseline on one NVIDIA GPU.
 - Phase 2 benchmarks that aggregated SGLang baseline under different workloads and concurrency levels.
-- Phase 3 measures prefill/decode interference and compares no chunking against chunked prefill.
+- Phase 3 measures prefill/decode interference and compares no chunking against chunked prefill. The RTX 4090 run is preserved as historical evidence, and the H100 NVL chunk-size sweep is the new controlled baseline for later distributed-serving work.
 
 This repository intentionally does not yet include Dynamo, NIXL, prefill/decode disaggregation, multi-GPU serving, or Kubernetes.
 
@@ -20,6 +20,14 @@ Phase 1 and Phase 2 were run on RunPod with:
 - SGLang 0.5.21
 - Model: `Qwen/Qwen3-0.6B`
 - Served model name: `qwen3-0.6b`
+
+Phase 3 now also includes a controlled H100 NVL baseline sweep for the later aggregated-vs-disaggregated comparison:
+
+- 1x NVIDIA H100 NVL
+- 95830 MiB VRAM
+- Driver `580.159.04`, CUDA `13.0`
+- SGLang `0.5.21`
+- Model: `Qwen/Qwen3-0.6B`
 
 The validated architecture is aggregated inference:
 
@@ -118,12 +126,16 @@ The original decode-heavy probe naturally stopped at roughly 273-283 completion 
 
 ## Phase 3 Status
 
-Phase 3 is complete for the first matched chunked-prefill A/B:
+Phase 3 is complete. The original RTX 4090 matched A/B remains historical evidence:
 
 - No-chunk baseline: `--chunked-prefill-size -1`
 - Chunked condition: `--chunked-prefill-size 4096`
 - Workload: four active sustained-decode requests, then one 10285-token long-prefill request injected at about 1.508 seconds
 
 Main result: chunked prefill reduced during-prefill p95/p99/max inter-stream-event gaps by about 34-35%, but it did not improve the worst synchronized stall. This suggests chunking mitigated part of the interference but did not fully isolate decode token delivery in the aggregated worker.
+
+The new H100 NVL baseline sweep reran all chunked-prefill configurations fresh: `-1`, `8192`, `4096`, `2048`, and `1024`. Throughput stayed roughly `1527-1538` output tokens/sec. The relationship was non-monotonic: `4096` produced the lowest injected-request TTFT/latency, `2048` produced the lowest during-prefill p99/max among chunked configurations, and smaller chunks were not always better.
+
+Do not compare RTX 4090 and H100 absolute latency numbers as a controlled hardware comparison.
 
 Do not infer GPU saturation, memory-bandwidth saturation, compute-bound behavior, or P/D disaggregation benefit from the current results alone.

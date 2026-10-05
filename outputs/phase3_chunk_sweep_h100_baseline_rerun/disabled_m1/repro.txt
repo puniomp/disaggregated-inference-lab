@@ -1,0 +1,26 @@
+# Phase 3 H100 chunk sweep baseline rerun configuration
+
+Captured at: 2026-10-05T23:10:58+00:00
+Git HEAD: 419e89f6b424e31627a12501f99da8bbbc3b02f4
+SGLang version: 0.5.21
+Launch extra args: --chunked-prefill-size -1 --mem-fraction-static 0.704 --max-prefill-tokens 16384 --schedule-policy fcfs --schedule-conservativeness 1.0
+Background decode requests: 4
+Background max output tokens: 2000
+Injection delay seconds: 1.5
+Injected prefill terms target: 8192
+Injected max output tokens: 64
+NVCC: /workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13/bin/nvcc Cuda compilation tools, release 13.4, V13.4.92
+CUDA13_ROOT: /workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13
+
+GPU:
+NVIDIA H100 NVL, 95830 MiB, 580.159.04
+
+Server args subset from log:
+'mem_fraction_static': 0.704
+'max_running_requests': None
+'max_total_tokens': None
+'chunked_prefill_size': -1
+'max_prefill_tokens': 16384
+'schedule_policy': 'fcfs'
+'schedule_conservativeness': 1.0
+'enable_mixed_chunk': False

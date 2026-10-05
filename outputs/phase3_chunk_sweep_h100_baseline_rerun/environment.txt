@@ -1,0 +1,15 @@
+Captured at: 2026-10-05T23:10:06+00:00
+Git HEAD: 419e89f6b424e31627a12501f99da8bbbc3b02f4
+Git status: ## main...origin/main ?? outputs/phase3_chunk_sweep_h100/ ?? outputs/phase3_chunk_sweep_h100_baseline_rerun/ ?? outputs/phase3_chunk_sweep_h100_cuda13/ ?? outputs/phase3_chunk_sweep_h100_cuda13path/ ?? outputs/phase3_chunk_sweep_h100_final/ 
+Python: Python 3.12.3
+SGLang: 0.5.21
+Torch: 2.13.0+cu130
+Torch CUDA: 13.0
+CUDA available: True
+GPU: NVIDIA H100 NVL, 95830 MiB, 580.159.04
+NVCC: /workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13/bin/nvcc Cuda compilation tools, release 13.4, V13.4.92
+CUDA13_ROOT: /workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13
+LIBRARY_PATH: /workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13/lib64:/workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13/lib64:/usr/local/cuda/lib64/stubs
+LD_LIBRARY_PATH: /workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13/lib64:/workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13/lib64:/usr/local/cuda/lib64
+Hardware baseline note: H100 NVL baseline rerun. Do not numerically combine with historical RTX 4090 Phase 3 results.
+Environment repair: PATH uses Python-installed CUDA 13 NVCC; .venv nvidia/cu13/lib64 symlinks to nvidia/cu13/lib; libcudart.so symlinks to libcudart.so.13 for SGLang JIT linking.

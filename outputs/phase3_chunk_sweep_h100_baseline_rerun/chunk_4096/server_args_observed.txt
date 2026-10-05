@@ -1,0 +1,8 @@
+'mem_fraction_static': 0.704
+'max_running_requests': None
+'max_total_tokens': None
+'chunked_prefill_size': 4096
+'max_prefill_tokens': 16384
+'schedule_policy': 'fcfs'
+'schedule_conservativeness': 1.0
+'enable_mixed_chunk': False

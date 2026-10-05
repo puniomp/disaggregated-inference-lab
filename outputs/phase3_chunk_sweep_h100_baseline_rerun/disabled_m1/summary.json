@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-10-05T23:10:58.699252+00:00",
+  "server_config_label": "chunked_prefill_disabled_chunked_prefill_size_-1",
+  "model": "qwen3-0.6b",
+  "background_decode_requests": 4,
+  "background_max_output_tokens": 2000,
+  "injection_delay_target_s": 1.5,
+  "injection_s": 1.507638305425644,
+  "injected_prefill_terms_target": 8192,
+  "injected_max_output_tokens": 64,
+  "ok_requests": 5,
+  "error_requests": 0,
+  "wall_time_s": 5.275508340448141,
+  "aggregate_output_tokens_per_s": 1528.5730738348113,
+  "background_decode_completion_tokens": [
+    2000,
+    2000,
+    2000,
+    2000
+  ],
+  "background_decode_finish_reasons": [
+    "length",
+    "length",
+    "length",
+    "length"
+  ],
+  "injected_prompt_tokens": 10285,
+  "injected_completion_tokens": 64,
+  "injected_finish_reason": "length",
+  "injected_ttft_s": 0.15576902776956558,
+  "injected_latency_s": 0.336211247369647,
+  "background_itl_by_phase": [
+    {
+      "phase": "before",
+      "samples": 2108,
+      "itl_p50_s": 0.00228317454457283,
+      "itl_p95_s": 0.002981527987867594,
+      "itl_p99_s": 0.003370787315070629,
+      "itl_max_s": 0.006352690979838371
+    },
+    {
+      "phase": "during_prefill_proxy",
+      "samples": 100,
+      "itl_p50_s": 0.0001572389155626297,
+      "itl_p95_s": 0.047652299515902996,
+      "itl_p99_s": 0.04827013222500682,
+      "itl_max_s": 0.04853104427456856
+    },
+    {
+      "phase": "after",
+      "samples": 5788,
+      "itl_p50_s": 0.002475452609360218,
+      "itl_p95_s": 0.0027837210334837434,
+      "itl_p99_s": 0.0029740905575454234,
+      "itl_max_s": 0.049699800089001656
+    }
+  ],
+  "metric_notes": {
+    "itl": "Measured as inter-stream-event gap for background decode chunks. SGLang stream_interval=1 makes this close to per-token timing, but the OpenAI stream event is still the unit directly measured here.",
+    "during_prefill_proxy": "Gaps whose arrival time is between injected request submission and that request's first streamed content. This approximates the injected prefill/TTFT window from client-observed timing."
+  }
+}

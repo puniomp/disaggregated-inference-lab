@@ -55,3 +55,8 @@ logs/
 *.tgz
 *.tar.gz
 *.zip
+# Superseded Phase 3 H100 startup attempts; keep the reviewed baseline rerun.
+outputs/phase3_chunk_sweep_h100/
+outputs/phase3_chunk_sweep_h100_cuda13/
+outputs/phase3_chunk_sweep_h100_cuda13path/
+outputs/phase3_chunk_sweep_h100_final/

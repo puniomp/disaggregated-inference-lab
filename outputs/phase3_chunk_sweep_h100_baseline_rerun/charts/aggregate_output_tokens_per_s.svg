@@ -1,0 +1,24 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='420' viewBox='0 0 900 420'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='80' y='26' font-family='sans-serif' font-size='16'>H100 chunk size vs aggregate output throughput</text>
+<line x1='80' y1='350' x2='870' y2='350' stroke='#111'/>
+<line x1='80' y1='45' x2='80' y2='350' stroke='#111'/>
+<text x='18' y='165' transform='rotate(-90 18 165)' font-family='sans-serif' font-size='12'>tokens/sec</text>
+<text x='62.0' y='374' font-family='sans-serif' font-size='12'>-1</text>
+<text x='259.5' y='374' font-family='sans-serif' font-size='12'>8192</text>
+<text x='457.0' y='374' font-family='sans-serif' font-size='12'>4096</text>
+<text x='654.5' y='374' font-family='sans-serif' font-size='12'>2048</text>
+<text x='852.0' y='374' font-family='sans-serif' font-size='12'>1024</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2" points="80.0,79.3 277.5,77.7 475.0,79.2 672.5,78.3 870.0,79.6"/>
+<circle cx='80.0' cy='79.3' r='4' fill='#2563eb'/>
+<text x='85.0' y='74.3' font-family='sans-serif' font-size='10'>1528.6</text>
+<circle cx='277.5' cy='77.7' r='4' fill='#2563eb'/>
+<text x='282.5' y='72.7' font-family='sans-serif' font-size='10'>1537.7</text>
+<circle cx='475.0' cy='79.2' r='4' fill='#2563eb'/>
+<text x='480.0' y='74.2' font-family='sans-serif' font-size='10'>1528.9</text>
+<circle cx='672.5' cy='78.3' r='4' fill='#2563eb'/>
+<text x='677.5' y='73.3' font-family='sans-serif' font-size='10'>1534.0</text>
+<circle cx='870.0' cy='79.6' r='4' fill='#2563eb'/>
+<text x='875.0' y='74.6' font-family='sans-serif' font-size='10'>1526.8</text>
+<rect x='710' y='45' width='10' height='10' fill='#2563eb'/><text x='726' y='54' font-family='sans-serif' font-size='12'>aggregate_output_tokens_per_s</text>
+</svg>

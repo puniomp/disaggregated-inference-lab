@@ -10,11 +10,32 @@ This phase stays within the single-worker, single-GPU SGLang architecture. It do
 
 ## Environment
 
+### Historical RTX 4090 A/B
+
 - SGLang version: `0.5.21`
 - Model: `Qwen/Qwen3-0.6B`
 - Served model name: `qwen3-0.6b`
 - GPU: `NVIDIA GeForce RTX 4090`, `24564 MiB`, driver `580.65.06`
 - Architecture: one SGLang worker on one GPU; prefill and decode colocated
+
+The RTX 4090 experiment remains historical Phase 3 evidence. It demonstrated the prefill/decode interference phenomenon and the initial matched no-chunk vs chunked-prefill A/B result.
+
+### Controlled H100 NVL Baseline
+
+The later distributed-serving experiments will require H100-class hardware, so the chunk-size sweep was rerun as a new controlled baseline on H100 NVL. Do not numerically combine these H100 measurements with the earlier RTX 4090 measurements or present their absolute latencies as a controlled hardware comparison.
+
+- SGLang version: `0.5.21`
+- Model: `Qwen/Qwen3-0.6B`
+- Served model name: `qwen3-0.6b`
+- GPU: `NVIDIA H100 NVL`, `95830 MiB`, driver `580.159.04`
+- CUDA shown by `nvidia-smi`: `13.0`
+- PyTorch: `2.13.0+cu130`
+- PyTorch CUDA: `13.0`
+- `torch.cuda.is_available()`: `True`
+- NVCC used for SGLang JIT: Python-installed CUDA `13.4`, `V13.4.92`
+- Architecture: one SGLang worker on one GPU; prefill and decode colocated
+
+Environment note: the pod's system `nvcc` was CUDA `12.8`, while SGLang `0.5.21` used CUDA 13 packages. The H100 rerun therefore used the Python-installed CUDA 13 `nvcc` and local virtualenv CUDA library paths for SGLang JIT linking. This environment repair is recorded in `outputs/phase3_chunk_sweep_h100_baseline_rerun/environment.txt`.
 
 ## SGLang Chunked-Prefill Configuration
 
@@ -87,6 +108,7 @@ Measurement limitation: ITL is a client-observed inter-stream-event proxy. The O
 - `outputs/phase3_interference_baseline_no_chunked_controlled`: primary no-chunk baseline.
 - `outputs/phase3_interference_chunked_4096`: matched chunked-prefill run.
 - `outputs/phase3_interference_ab_comparison`: computed comparison metrics and aligned A/B chart.
+- `outputs/phase3_chunk_sweep_h100_baseline_rerun`: controlled H100 NVL chunk-size sweep used as the new baseline for later distributed-serving work.
 
 ## Reproducibility Commands
 
@@ -107,6 +129,8 @@ python3 benchmarks/interference_sglang.py   --base-url http://localhost:30000   
 ```
 
 ## Matched A/B Results
+
+These results are from the historical RTX 4090 matched A/B run. They should not be numerically combined with the H100 NVL chunk-size sweep.
 
 Background decode inter-stream-event gap proxy:
 
@@ -155,6 +179,72 @@ Largest synchronized stalls:
 - No chunking: around `+50 ms` after injection, gaps near `48 ms`; around `+142 ms`, gaps near `80 ms`; around `+287 ms`, gaps near `145 ms` just after the injected first token.
 - Chunked `4096`: around `+55 ms`, gaps near `52-53 ms`; around `+97 ms`, gaps near `31 ms`; around `+270 ms`, gaps near `172 ms` just after the injected first token.
 
+## H100 NVL Chunk-Size Sweep
+
+### Experimental Matrix
+
+The H100 NVL sweep reran all configurations fresh on the same pod and treats `chunked-prefill-size` as the independent variable:
+
+| Configuration | Launch argument |
+|---|---|
+| Disabled | `--chunked-prefill-size -1` |
+| Chunked 8192 | `--chunked-prefill-size 8192` |
+| Chunked 4096 | `--chunked-prefill-size 4096` |
+| Chunked 2048 | `--chunked-prefill-size 2048` |
+| Chunked 1024 | `--chunked-prefill-size 1024` |
+
+All rows were restarted from a fresh SGLang process. The active `chunked_prefill_size` value was verified from the SGLang startup log before each measurement.
+
+### Controlled Variables
+
+- SGLang version: `0.5.21`
+- Model: `Qwen/Qwen3-0.6B`
+- Served model name: `qwen3-0.6b`
+- GPU/runtime: same H100 NVL pod for all rows
+- Background decode requests: `4`
+- Background prompt tokens: about `115` per request
+- Background max output tokens: `2000`
+- Injected request prompt tokens: `10285`
+- Injected request max output tokens: `64`
+- Injection delay target: `1.5s`
+- Scheduling: `--schedule-policy fcfs`
+- Memory/scheduler settings: `--mem-fraction-static 0.704`, `--max-prefill-tokens 16384`, `--schedule-conservativeness 1.0`
+- `enable_mixed_chunk: False`
+- Same client-observed streaming event timing instrumentation
+
+### H100 NVL Results
+
+All five rows completed with `5` successful requests and `0` errors. All four background decode requests generated `2000` completion tokens with finish reason `length`; the injected request generated `64` completion tokens with finish reason `length`.
+
+Background timing values are client-observed inter-stream-event latency proxies in milliseconds.
+
+| Chunk size | Before p50 | Before p95 | Before p99 | Before max | During p50 | During p95 | During p99 | During max | After p50 | After p95 | After p99 | After max | Injected TTFT | Injected latency | Background TPOT mean | Output tok/s | Samples before/during/after |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| `-1` | 2.283 | 2.982 | 3.371 | 6.353 | 0.157 | 47.652 | 48.270 | 48.531 | 2.475 | 2.784 | 2.974 | 49.700 | 155.769 | 336.211 | 2.470 | 1528.573 | 2108 / 100 / 5788 |
+| `8192` | 2.300 | 2.373 | 2.447 | 9.959 | 0.393 | 56.611 | 79.598 | 79.634 | 2.481 | 2.826 | 3.017 | 64.862 | 210.358 | 390.536 | 2.504 | 1537.695 | 2273 / 108 / 5615 |
+| `4096` | 2.288 | 2.387 | 2.754 | 97.406 | 0.393 | 2.549 | 56.359 | 56.657 | 2.477 | 2.712 | 3.005 | 67.860 | 135.740 | 312.884 | 2.463 | 1528.873 | 2068 / 108 / 5820 |
+| `2048` | 2.305 | 2.564 | 3.953 | 12.986 | 0.390 | 4.469 | 55.265 | 55.270 | 2.481 | 2.711 | 2.930 | 73.763 | 143.735 | 321.126 | 2.480 | 1534.050 | 2122 / 112 / 5762 |
+| `1024` | 2.286 | 2.413 | 3.045 | 11.887 | 0.328 | 4.941 | 67.932 | 68.018 | 2.477 | 2.783 | 2.965 | 87.339 | 168.997 | 346.747 | 2.475 | 1526.805 | 2107 / 128 / 5761 |
+
+Aggregate throughput remained roughly `1527-1538` output tokens/sec across the sweep.
+
+### H100 NVL Observations
+
+- `4096` produced the lowest injected-request TTFT and total latency in this sweep: `135.740 ms` TTFT and `312.884 ms` latency.
+- `2048` produced the lowest during-prefill p99 and max among chunked configurations: `55.265 ms` p99 and `55.270 ms` max.
+- `4096`, `2048`, and `1024` dramatically improved during-prefill p95 relative to disabled chunking and `8192`.
+- The relationship was non-monotonic. Smaller chunks were not always better.
+- Rare p99/max stalls remained even when p95 improved substantially. For example, `4096` reduced during-prefill p95 to `2.549 ms`, while its during-prefill p99 remained `56.359 ms`.
+- `8192` had the worst injected TTFT and the worst during-prefill p99/max among the chunked configurations in this run.
+
+### H100 NVL Caveats
+
+- ITL is still a client-observed OpenAI-compatible inter-stream-event gap proxy, not a GPU-side per-token ITL trace.
+- A streaming event can contain a token-like piece, partial text, or multiple characters/pieces.
+- The injected request's TTFT is a submission-to-first-streamed-token proxy. It includes queueing, prefill, first decode, and stream delivery effects; it is not pure prefill time.
+- These H100 results are the baseline for later distributed-serving work, but they do not replace the RTX 4090 historical result as if hardware were controlled.
+- Do not infer GPU saturation, memory-bandwidth saturation, compute-bound behavior, memory-bound behavior, or scheduler causality from this client-side benchmark alone.
+
 ## Interpretation
 
 ### MEASURED
@@ -165,6 +255,9 @@ Largest synchronized stalls:
 - The worst synchronized stall was not improved; it was larger in the chunked run.
 - The long request's TTFT was slightly lower in the chunked run, but this is a single-run result.
 - Aggregate throughput was nearly unchanged, with a small measured increase in the chunked run.
+- The H100 NVL sweep completed all five chunk-size configurations with the same workload shape and no request errors.
+- In the H100 NVL sweep, throughput stayed roughly `1527-1538` output tokens/sec.
+- In the H100 NVL sweep, `4096` had the lowest injected TTFT/latency, and `2048` had the lowest during-prefill p99/max among chunked configurations.
 
 ### REASONABLE INFERENCE
 
@@ -172,6 +265,7 @@ Largest synchronized stalls:
 - Chunking did not fully isolate decode token delivery for this workload.
 - The remaining synchronized stall suggests an aggregated worker can still produce decode jitter when long-prefill work arrives, even with chunking enabled.
 - This is a useful scheduler-level mitigation signal, not a full solution claim.
+- The H100 NVL sweep suggests chunk-size tradeoffs are non-monotonic for this workload; middle chunk sizes looked better than both very large and very small chunk sizes on different metrics.
 
 ### CANNOT CONCLUDE
 
@@ -180,6 +274,7 @@ Largest synchronized stalls:
 - We cannot claim `4096` is the best chunk size.
 - We cannot claim chunked prefill is generally sufficient or insufficient from one workload and one run.
 - We cannot claim P/D disaggregation benefit yet because no disaggregated system has been measured.
+- We cannot compare RTX 4090 and H100 absolute latency values as a controlled hardware experiment.
 
 ## Why This Motivates Phase 4
 

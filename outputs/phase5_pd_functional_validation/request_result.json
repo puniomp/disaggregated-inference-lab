@@ -1,0 +1,24 @@
+{
+  "phase": "phase5_pd_functional_validation",
+  "purpose": "one-request functional validation only; not a benchmark",
+  "architecture": "Client -> Dynamo frontend -> prefill router -> prefill worker on GPU 0 -> NIXL/UCX KV handoff path -> decode worker on GPU 1 -> streamed response",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "served_model": "llama3.1-8b-instruct",
+  "http_status": 200,
+  "prompt_tokens": 50,
+  "completion_tokens": 41,
+  "total_tokens": 91,
+  "finish_reason": "stop",
+  "client_ttft_s": 0.4206,
+  "client_e2e_latency_s": 6.4836,
+  "dynamo_ttft_ms": 396.88,
+  "dynamo_elapsed_ms": 6460,
+  "prefill_worker_id": "7537786647078909697",
+  "decode_worker_id": "7403880299791686667",
+  "prefill_decode_worker_ids_differ": true,
+  "notes": [
+    "Single functional-validation request only.",
+    "Do not interpret these values as performance results.",
+    "No explicit per-request NIXL transfer-completed event or byte-count telemetry was captured."
+  ]
+}

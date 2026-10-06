@@ -1,0 +1,44 @@
+Sanitized Phase 5 functional-validation evidence excerpts.
+
+This file intentionally includes only selected log facts. Full runtime logs were not committed.
+
+Registration evidence:
+- Prefill worker detected, registering and activating prefill router.
+- Prefill namespace: ["dynamo","prefill","generate","prefill","prefill"]
+- Decode/backend namespace: ["dynamo","backend","generate","chat|completions","decode"]
+- Chat completions is ready.
+- Completions is ready.
+- Prefill router target activated for dynamo/prefill/generate.
+- /v1/models returned llama3.1-8b-instruct with context_window 16384.
+
+Worker startup evidence:
+- Prefill found cached model snapshot and skipped download.
+- Decode found cached model snapshot and skipped download.
+- Prefill loaded LlamaForCausalLM weights; reported model weight memory 15.02 GB.
+- Decode loaded LlamaForCausalLM weights; reported model weight memory 15.02 GB.
+- Prefill allocated KV cache: 409472 tokens, K size 24.99 GB, V size 24.99 GB.
+- Decode allocated KV cache: 409472 tokens, K size 24.99 GB, V size 24.99 GB.
+- Prefill NIXL KVManager initialized with backend UCX.
+- Decode NIXL KVManager initialized with backend UCX.
+- Prefill worker handler initialized with bootstrap host 172.22.0.2 and bootstrap port 12345.
+- Decode worker handler initialized in disaggregated decode mode.
+
+Single request evidence:
+- HTTP status: 200.
+- Request status: success.
+- Input tokens: 50.
+- Output tokens: 41.
+- Dynamo TTFT: 396.88 ms.
+- Dynamo elapsed: 6460 ms.
+- prefill_worker_id: 7537786647078909697.
+- decode_worker_id: 7403880299791686667.
+- Prefill component handled the request with instance_id 7537786647078909697.
+- Decode/backend component handled the request with instance_id 7403880299791686667.
+- Prefill batch logged #new-seq: 1 and #new-token: 64.
+- Decode submitted SGLang request ID 28b7513890244abe82a755340dbaebae for the same request context.
+- Decode request completed successfully.
+
+Interpretation boundary:
+- Directly observed: distinct prefill/decode workers, initialized NIXL KV managers using UCX, successful request, output generation.
+- Strongly inferred: the configured handoff path supplied the decode worker with the state needed to continue generation.
+- Not directly proven: explicit per-request NIXL transfer completion or byte-count-level KV-transfer telemetry.

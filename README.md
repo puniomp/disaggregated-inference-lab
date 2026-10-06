@@ -2,7 +2,7 @@
 
 Hands-on lab for learning modern LLM serving architecture through incremental experiments.
 
-Current scope: Phase 0 through Phase 4B.
+Current scope: Phase 0 through Phase 5.
 
 - Phase 0 validates the architecture vocabulary and upstream documentation assumptions.
 - Phase 1 runs an aggregated SGLang baseline on one NVIDIA GPU.
@@ -10,10 +10,11 @@ Current scope: Phase 0 through Phase 4B.
 - Phase 3 measures mixed prefill/decode interference and chunked-prefill tuning. The RTX 4090 run is preserved as historical evidence, and the H100 NVL chunk-size sweep is the controlled baseline for later distributed-serving work.
 - Phase 4A transitions to `meta-llama/Llama-3.1-8B-Instruct` and validates a standalone one-GPU aggregated SGLang baseline.
 - Phase 4B introduces Dynamo in front of SGLang while keeping serving aggregated on one H100.
+- Phase 5 validates the first two-GPU Dynamo + SGLang P/D request with prefill on GPU 0, decode on GPU 1, and the configured NIXL/UCX KV handoff path.
 
-Next steps are Phase 5, Dynamo prefill/decode disaggregation on separate GPUs, and Phase 6, a controlled aggregated-vs-P/D comparison.
+Next step is Phase 6, a controlled aggregated-vs-P/D comparison.
 
-This repository intentionally does not yet include P/D disaggregation, multi-GPU serving, or Kubernetes implementations.
+This repository intentionally does not yet include P/D performance results or Kubernetes implementations.
 
 ## Validated Environment
 
@@ -183,3 +184,21 @@ Prefill and decode still run in the same SGLang worker on the same GPU. NIXL is 
 
 This is a functional serving checkpoint, not a performance comparison with Phase 4A.
 
+## Phase 5 Status
+
+Phase 5 is functionally validated. It separates prefill and decode across two H100 NVL GPUs:
+
+```text
+Client -> Dynamo frontend -> prefill router -> Prefill Worker on GPU 0 -> NIXL/UCX KV handoff -> Decode Worker on GPU 1 -> streamed response
+```
+
+The first request succeeded with distinct worker IDs:
+
+- `prefill_worker_id`: `7537786647078909697`
+- `decode_worker_id`: `7403880299791686667`
+
+NIXL KV managers initialized on both workers with backend `UCX`, and the request returned HTTP 200 with generated output. The captured evidence does not include an explicit per-request `NIXL transfer completed` event or byte-count-level transfer telemetry, so the KV handoff claim is intentionally framed as functional evidence rather than byte-level transfer proof.
+
+Phase 5 proves the lab can execute one real request with P/D physically separated across two H100 GPUs. It does not prove that P/D is faster than aggregated serving; that is the Phase 6 question.
+
+See `docs/phase5_dynamo_sglang_pd_functional.md` for the full checkpoint.

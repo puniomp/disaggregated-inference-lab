@@ -1,0 +1,31 @@
+Phase 5 two-GPU P/D functional-validation environment
+
+Hardware:
+- 2x NVIDIA H100 NVL
+- 95830 MiB VRAM each
+- Driver 580.159.04
+- CUDA 13.0
+
+Topology:
+- GPU0 <-> GPU1 = SYS
+- GPU0 NUMA node 0
+- GPU1 NUMA node 1
+
+Software:
+- Python 3.12.3
+- ai-dynamo 1.6.0.dev20261004
+- ai-dynamo-runtime 1.6.0.dev20261004
+- SGLang 0.5.19
+- Torch 2.13.0+cu130
+- NIXL 1.4.0
+- nixl-cu13 1.4.0
+
+Model and serving configuration:
+- Model: meta-llama/Llama-3.1-8B-Instruct
+- Served model: llama3.1-8b-instruct
+- Context length: 16384
+- Chunked prefill size: 4096
+- P/D transfer backend: nixl
+- Observed NIXL backend: UCX
+
+This file intentionally contains no Hugging Face token, credentials, model cache, or runtime secret material.

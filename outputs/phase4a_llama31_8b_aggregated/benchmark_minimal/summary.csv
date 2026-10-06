@@ -1,0 +1,2 @@
+aggregate_output_tokens_per_s,completion_tokens_avg,completion_tokens_total,concurrency,error_requests,latency_p50_s,latency_p95_s,ok_requests,profile,request_tpot_p50_s,request_tpot_p95_s,requests,requests_per_s,ttft_p50_s,ttft_p95_s,wall_time_s
+133.8719075782456,128.0,128,1,0,0.9527601040899754,0.9527601040899754,1,baseline,0.0069592393436065806,0.0069592393436065806,1,1.0458742779550438,0.06845727190375328,0.06845727190375328,0.9561378657817841

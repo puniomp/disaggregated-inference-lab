@@ -1,0 +1,16 @@
+2026-10-06T00:26:08+00:00
+b6a6eabf307c64f8c922c516159a9da5750eaa37
+Python 3.12.3
+sglang 0.5.21
+torch 2.13.0+cu130
+torch_cuda 13.0
+cuda_available True
+huggingface_hub 1.33.0
+transformers 5.12.1
+NVIDIA H100 NVL, 95830 MiB, 580.159.04
+/workspace/disaggregated-inference-lab/.venv/lib/python3.12/site-packages/nvidia/cu13/bin/nvcc
+Cuda compilation tools, release 13.4, V13.4.92
+Build cuda_13.4.r13.4/compiler.38855100_0
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         100G   28G   73G  28% /
+overlay         100G   28G   73G  28% /

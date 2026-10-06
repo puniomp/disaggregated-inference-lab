@@ -1,0 +1,20 @@
+[
+  {
+    "profile": "baseline",
+    "concurrency": 1,
+    "requests": 1,
+    "ok_requests": 1,
+    "error_requests": 0,
+    "wall_time_s": 0.9561378657817841,
+    "requests_per_s": 1.0458742779550438,
+    "aggregate_output_tokens_per_s": 133.8719075782456,
+    "latency_p50_s": 0.9527601040899754,
+    "latency_p95_s": 0.9527601040899754,
+    "ttft_p50_s": 0.06845727190375328,
+    "ttft_p95_s": 0.06845727190375328,
+    "request_tpot_p50_s": 0.0069592393436065806,
+    "request_tpot_p95_s": 0.0069592393436065806,
+    "completion_tokens_total": 128,
+    "completion_tokens_avg": 128.0
+  }
+]

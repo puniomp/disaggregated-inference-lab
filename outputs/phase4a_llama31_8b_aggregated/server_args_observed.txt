@@ -1,0 +1,13 @@
+'model_path': 'meta-llama/Llama-3.1-8B-Instruct'
+'context_length': 16384
+'dtype': 'bfloat16'
+'mem_fraction_static': 0.704
+'max_running_requests': None
+'max_total_tokens': None
+'chunked_prefill_size': 4096
+'max_prefill_tokens': 16384
+'schedule_policy': 'fcfs'
+'tp_size': 1
+'served_model_name': 'llama3.1-8b-instruct'
+'stream_interval': 1
+'attention_backend': 'fa3'

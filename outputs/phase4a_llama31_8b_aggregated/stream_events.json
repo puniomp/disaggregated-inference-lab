@@ -1,0 +1,674 @@
+[
+  {
+    "arrival_s": 0.05501442775130272,
+    "chars": 2,
+    "gap_s": null,
+    "index": 0,
+    "preview": "**"
+  },
+  {
+    "arrival_s": 0.05842432379722595,
+    "chars": 4,
+    "gap_s": 0.003409896045923233,
+    "index": 1,
+    "preview": "Pref"
+  },
+  {
+    "arrival_s": 0.06497885659337044,
+    "chars": 3,
+    "gap_s": 0.0065545327961444855,
+    "index": 2,
+    "preview": "ill"
+  },
+  {
+    "arrival_s": 0.07186944782733917,
+    "chars": 4,
+    "gap_s": 0.006890591233968735,
+    "index": 3,
+    "preview": " and"
+  },
+  {
+    "arrival_s": 0.0787449199706316,
+    "chars": 7,
+    "gap_s": 0.006875472143292427,
+    "index": 4,
+    "preview": " Decode"
+  },
+  {
+    "arrival_s": 0.08559695445001125,
+    "chars": 3,
+    "gap_s": 0.006852034479379654,
+    "index": 5,
+    "preview": " in"
+  },
+  {
+    "arrival_s": 0.09252450242638588,
+    "chars": 3,
+    "gap_s": 0.006927547976374626,
+    "index": 6,
+    "preview": " an"
+  },
+  {
+    "arrival_s": 0.09941407106816769,
+    "chars": 3,
+    "gap_s": 0.006889568641781807,
+    "index": 7,
+    "preview": " Ag"
+  },
+  {
+    "arrival_s": 0.10634618438780308,
+    "chars": 8,
+    "gap_s": 0.006932113319635391,
+    "index": 8,
+    "preview": "gregated"
+  },
+  {
+    "arrival_s": 0.11323805712163448,
+    "chars": 2,
+    "gap_s": 0.006891872733831406,
+    "index": 9,
+    "preview": " L"
+  },
+  {
+    "arrival_s": 0.12016719579696655,
+    "chars": 2,
+    "gap_s": 0.006929138675332069,
+    "index": 10,
+    "preview": "LM"
+  },
+  {
+    "arrival_s": 0.1270898263901472,
+    "chars": 7,
+    "gap_s": 0.006922630593180656,
+    "index": 11,
+    "preview": " Server"
+  },
+  {
+    "arrival_s": 0.13392777182161808,
+    "chars": 4,
+    "gap_s": 0.006837945431470871,
+    "index": 12,
+    "preview": "**\n\n"
+  },
+  {
+    "arrival_s": 0.1407926306128502,
+    "chars": 4,
+    "gap_s": 0.006864858791232109,
+    "index": 13,
+    "preview": "Here"
+  },
+  {
+    "arrival_s": 0.14771244674921036,
+    "chars": 2,
+    "gap_s": 0.0069198161363601685,
+    "index": 14,
+    "preview": "'s"
+  },
+  {
+    "arrival_s": 0.15455647557973862,
+    "chars": 2,
+    "gap_s": 0.006844028830528259,
+    "index": 15,
+    "preview": " a"
+  },
+  {
+    "arrival_s": 0.16147794388234615,
+    "chars": 6,
+    "gap_s": 0.006921468302607536,
+    "index": 16,
+    "preview": " brief"
+  },
+  {
+    "arrival_s": 0.16844762675464153,
+    "chars": 9,
+    "gap_s": 0.00696968287229538,
+    "index": 17,
+    "preview": " overview"
+  },
+  {
+    "arrival_s": 0.17534945160150528,
+    "chars": 3,
+    "gap_s": 0.006901824846863747,
+    "index": 18,
+    "preview": " of"
+  },
+  {
+    "arrival_s": 0.18250867165625095,
+    "chars": 4,
+    "gap_s": 0.007159220054745674,
+    "index": 19,
+    "preview": " pre"
+  },
+  {
+    "arrival_s": 0.18923079036176205,
+    "chars": 4,
+    "gap_s": 0.006722118705511093,
+    "index": 20,
+    "preview": "fill"
+  },
+  {
+    "arrival_s": 0.1960455309599638,
+    "chars": 4,
+    "gap_s": 0.006814740598201752,
+    "index": 21,
+    "preview": " and"
+  },
+  {
+    "arrival_s": 0.20295973867177963,
+    "chars": 7,
+    "gap_s": 0.006914207711815834,
+    "index": 22,
+    "preview": " decode"
+  },
+  {
+    "arrival_s": 0.2103305198252201,
+    "chars": 3,
+    "gap_s": 0.0073707811534404755,
+    "index": 23,
+    "preview": " in"
+  },
+  {
+    "arrival_s": 0.2168629877269268,
+    "chars": 3,
+    "gap_s": 0.0065324679017066956,
+    "index": 24,
+    "preview": " an"
+  },
+  {
+    "arrival_s": 0.2236769925802946,
+    "chars": 11,
+    "gap_s": 0.0068140048533678055,
+    "index": 25,
+    "preview": " aggregated"
+  },
+  {
+    "arrival_s": 0.23062549158930779,
+    "chars": 2,
+    "gap_s": 0.006948499009013176,
+    "index": 26,
+    "preview": " L"
+  },
+  {
+    "arrival_s": 0.23743178136646748,
+    "chars": 2,
+    "gap_s": 0.006806289777159691,
+    "index": 27,
+    "preview": "LM"
+  },
+  {
+    "arrival_s": 0.24434919841587543,
+    "chars": 2,
+    "gap_s": 0.006917417049407959,
+    "index": 28,
+    "preview": " ("
+  },
+  {
+    "arrival_s": 0.25128153525292873,
+    "chars": 5,
+    "gap_s": 0.006932336837053299,
+    "index": 29,
+    "preview": "Large"
+  },
+  {
+    "arrival_s": 0.2581414710730314,
+    "chars": 9,
+    "gap_s": 0.006859935820102692,
+    "index": 30,
+    "preview": " Language"
+  },
+  {
+    "arrival_s": 0.2651246674358845,
+    "chars": 6,
+    "gap_s": 0.00698319636285305,
+    "index": 31,
+    "preview": " Model"
+  },
+  {
+    "arrival_s": 0.27198217809200287,
+    "chars": 1,
+    "gap_s": 0.006857510656118393,
+    "index": 32,
+    "preview": ")"
+  },
+  {
+    "arrival_s": 0.2788578812032938,
+    "chars": 7,
+    "gap_s": 0.006875703111290932,
+    "index": 33,
+    "preview": " server"
+  },
+  {
+    "arrival_s": 0.28574972972273827,
+    "chars": 3,
+    "gap_s": 0.006891848519444466,
+    "index": 34,
+    "preview": ":\n\n"
+  },
+  {
+    "arrival_s": 0.2926729563623667,
+    "chars": 1,
+    "gap_s": 0.00692322663962841,
+    "index": 35,
+    "preview": "*"
+  },
+  {
+    "arrival_s": 0.299545306712389,
+    "chars": 3,
+    "gap_s": 0.006872350350022316,
+    "index": 36,
+    "preview": " **"
+  },
+  {
+    "arrival_s": 0.30646150931715965,
+    "chars": 4,
+    "gap_s": 0.00691620260477066,
+    "index": 37,
+    "preview": "Pref"
+  },
+  {
+    "arrival_s": 0.31333383172750473,
+    "chars": 3,
+    "gap_s": 0.0068723224103450775,
+    "index": 38,
+    "preview": "ill"
+  },
+  {
+    "arrival_s": 0.3202008791267872,
+    "chars": 3,
+    "gap_s": 0.0068670473992824554,
+    "index": 39,
+    "preview": "**:"
+  },
+  {
+    "arrival_s": 0.32716639898717403,
+    "chars": 5,
+    "gap_s": 0.0069655198603868484,
+    "index": 40,
+    "preview": " Pref"
+  },
+  {
+    "arrival_s": 0.33405703119933605,
+    "chars": 3,
+    "gap_s": 0.006890632212162018,
+    "index": 41,
+    "preview": "ill"
+  },
+  {
+    "arrival_s": 0.34151967242360115,
+    "chars": 3,
+    "gap_s": 0.007462641224265099,
+    "index": 42,
+    "preview": " is"
+  },
+  {
+    "arrival_s": 0.34797862730920315,
+    "chars": 2,
+    "gap_s": 0.006458954885601997,
+    "index": 43,
+    "preview": " a"
+  },
+  {
+    "arrival_s": 0.3547901026904583,
+    "chars": 10,
+    "gap_s": 0.00681147538125515,
+    "index": 44,
+    "preview": " technique"
+  },
+  {
+    "arrival_s": 0.36164585687220097,
+    "chars": 5,
+    "gap_s": 0.006855754181742668,
+    "index": 45,
+    "preview": " used"
+  },
+  {
+    "arrival_s": 0.3685083221644163,
+    "chars": 3,
+    "gap_s": 0.006862465292215347,
+    "index": 46,
+    "preview": " in"
+  },
+  {
+    "arrival_s": 0.37538234516978264,
+    "chars": 11,
+    "gap_s": 0.006874023005366325,
+    "index": 47,
+    "preview": " aggregated"
+  },
+  {
+    "arrival_s": 0.3823550436645746,
+    "chars": 2,
+    "gap_s": 0.0069726984947919846,
+    "index": 48,
+    "preview": " L"
+  },
+  {
+    "arrival_s": 0.38937857188284397,
+    "chars": 2,
+    "gap_s": 0.007023528218269348,
+    "index": 49,
+    "preview": "LM"
+  },
+  {
+    "arrival_s": 0.39618318155407906,
+    "chars": 8,
+    "gap_s": 0.0068046096712350845,
+    "index": 50,
+    "preview": " servers"
+  },
+  {
+    "arrival_s": 0.4030509255826473,
+    "chars": 3,
+    "gap_s": 0.006867744028568268,
+    "index": 51,
+    "preview": " to"
+  },
+  {
+    "arrival_s": 0.4099086355417967,
+    "chars": 8,
+    "gap_s": 0.006857709959149361,
+    "index": 52,
+    "preview": " improve"
+  },
+  {
+    "arrival_s": 0.41677138954401016,
+    "chars": 4,
+    "gap_s": 0.006862754002213478,
+    "index": 53,
+    "preview": " the"
+  },
+  {
+    "arrival_s": 0.42368360236287117,
+    "chars": 11,
+    "gap_s": 0.006912212818861008,
+    "index": 54,
+    "preview": " efficiency"
+  },
+  {
+    "arrival_s": 0.4306160397827625,
+    "chars": 3,
+    "gap_s": 0.006932437419891357,
+    "index": 55,
+    "preview": " of"
+  },
+  {
+    "arrival_s": 0.43746629916131496,
+    "chars": 6,
+    "gap_s": 0.006850259378552437,
+    "index": 56,
+    "preview": " model"
+  },
+  {
+    "arrival_s": 0.44439536333084106,
+    "chars": 10,
+    "gap_s": 0.0069290641695261,
+    "index": 57,
+    "preview": " inference"
+  },
+  {
+    "arrival_s": 0.4512347225099802,
+    "chars": 1,
+    "gap_s": 0.006839359179139137,
+    "index": 58,
+    "preview": "."
+  },
+  {
+    "arrival_s": 0.4581306278705597,
+    "chars": 3,
+    "gap_s": 0.006895905360579491,
+    "index": 59,
+    "preview": " It"
+  },
+  {
+    "arrival_s": 0.46502125076949596,
+    "chars": 9,
+    "gap_s": 0.006890622898936272,
+    "index": 60,
+    "preview": " involves"
+  },
+  {
+    "arrival_s": 0.47193714417517185,
+    "chars": 4,
+    "gap_s": 0.006915893405675888,
+    "index": 61,
+    "preview": " pre"
+  },
+  {
+    "arrival_s": 0.47883156314492226,
+    "chars": 11,
+    "gap_s": 0.006894418969750404,
+    "index": 62,
+    "preview": "-processing"
+  },
+  {
+    "arrival_s": 0.4857408460229635,
+    "chars": 4,
+    "gap_s": 0.006909282878041267,
+    "index": 63,
+    "preview": " the"
+  },
+  {
+    "arrival_s": 0.4926239624619484,
+    "chars": 6,
+    "gap_s": 0.006883116438984871,
+    "index": 64,
+    "preview": " input"
+  },
+  {
+    "arrival_s": 0.49948541074991226,
+    "chars": 5,
+    "gap_s": 0.006861448287963867,
+    "index": 65,
+    "preview": " text"
+  },
+  {
+    "arrival_s": 0.506376201286912,
+    "chars": 3,
+    "gap_s": 0.0068907905369997025,
+    "index": 66,
+    "preview": " to"
+  },
+  {
+    "arrival_s": 0.5132613461464643,
+    "chars": 8,
+    "gap_s": 0.006885144859552383,
+    "index": 67,
+    "preview": " extract"
+  },
+  {
+    "arrival_s": 0.5201687067747116,
+    "chars": 9,
+    "gap_s": 0.006907360628247261,
+    "index": 68,
+    "preview": " relevant"
+  },
+  {
+    "arrival_s": 0.5271346494555473,
+    "chars": 12,
+    "gap_s": 0.006965942680835724,
+    "index": 69,
+    "preview": " information"
+  },
+  {
+    "arrival_s": 0.5340115558356047,
+    "chars": 1,
+    "gap_s": 0.006876906380057335,
+    "index": 70,
+    "preview": ","
+  },
+  {
+    "arrival_s": 0.5408623833209276,
+    "chars": 5,
+    "gap_s": 0.006850827485322952,
+    "index": 71,
+    "preview": " such"
+  },
+  {
+    "arrival_s": 0.5477577764540911,
+    "chars": 3,
+    "gap_s": 0.006895393133163452,
+    "index": 72,
+    "preview": " as"
+  },
+  {
+    "arrival_s": 0.5546427834779024,
+    "chars": 9,
+    "gap_s": 0.00688500702381134,
+    "index": 73,
+    "preview": " entities"
+  },
+  {
+    "arrival_s": 0.5615282226353884,
+    "chars": 1,
+    "gap_s": 0.006885439157485962,
+    "index": 74,
+    "preview": ","
+  },
+  {
+    "arrival_s": 0.5685267150402069,
+    "chars": 9,
+    "gap_s": 0.006998492404818535,
+    "index": 75,
+    "preview": " keywords"
+  },
+  {
+    "arrival_s": 0.5754712801426649,
+    "chars": 1,
+    "gap_s": 0.006944565102458,
+    "index": 76,
+    "preview": ","
+  },
+  {
+    "arrival_s": 0.5824506469070911,
+    "chars": 4,
+    "gap_s": 0.006979366764426231,
+    "index": 77,
+    "preview": " and"
+  },
+  {
+    "arrival_s": 0.5893900785595179,
+    "chars": 8,
+    "gap_s": 0.00693943165242672,
+    "index": 78,
+    "preview": " context"
+  },
+  {
+    "arrival_s": 0.5963714309036732,
+    "chars": 1,
+    "gap_s": 0.006981352344155312,
+    "index": 79,
+    "preview": ","
+  },
+  {
+    "arrival_s": 0.6033416818827391,
+    "chars": 4,
+    "gap_s": 0.006970250979065895,
+    "index": 80,
+    "preview": " and"
+  },
+  {
+    "arrival_s": 0.6102914400398731,
+    "chars": 5,
+    "gap_s": 0.006949758157134056,
+    "index": 81,
+    "preview": " then"
+  },
+  {
+    "arrival_s": 0.6174392197281122,
+    "chars": 6,
+    "gap_s": 0.007147779688239098,
+    "index": 82,
+    "preview": " using"
+  },
+  {
+    "arrival_s": 0.6242538057267666,
+    "chars": 5,
+    "gap_s": 0.0068145859986543655,
+    "index": 83,
+    "preview": " this"
+  },
+  {
+    "arrival_s": 0.6312259566038847,
+    "chars": 4,
+    "gap_s": 0.006972150877118111,
+    "index": 84,
+    "preview": " pre"
+  },
+  {
+    "arrival_s": 0.6381577327847481,
+    "chars": 1,
+    "gap_s": 0.00693177618086338,
+    "index": 85,
+    "preview": "-"
+  },
+  {
+    "arrival_s": 0.6451351009309292,
+    "chars": 9,
+    "gap_s": 0.006977368146181107,
+    "index": 86,
+    "preview": "processed"
+  },
+  {
+    "arrival_s": 0.6520959604531527,
+    "chars": 12,
+    "gap_s": 0.006960859522223473,
+    "index": 87,
+    "preview": " information"
+  },
+  {
+    "arrival_s": 0.6590730790048838,
+    "chars": 3,
+    "gap_s": 0.00697711855173111,
+    "index": 88,
+    "preview": " to"
+  },
+  {
+    "arrival_s": 0.6660870239138603,
+    "chars": 9,
+    "gap_s": 0.007013944908976555,
+    "index": 89,
+    "preview": " generate"
+  },
+  {
+    "arrival_s": 0.6730134449899197,
+    "chars": 2,
+    "gap_s": 0.006926421076059341,
+    "index": 90,
+    "preview": " a"
+  },
+  {
+    "arrival_s": 0.6799635346978903,
+    "chars": 2,
+    "gap_s": 0.006950089707970619,
+    "index": 91,
+    "preview": " \""
+  },
+  {
+    "arrival_s": 0.6869064271450043,
+    "chars": 4,
+    "gap_s": 0.006942892447113991,
+    "index": 92,
+    "preview": "pref"
+  },
+  {
+    "arrival_s": 0.6938780806958675,
+    "chars": 3,
+    "gap_s": 0.006971653550863266,
+    "index": 93,
+    "preview": "ill"
+  },
+  {
+    "arrival_s": 0.700849886983633,
+    "chars": 1,
+    "gap_s": 0.006971806287765503,
+    "index": 94,
+    "preview": "\""
+  },
+  {
+    "arrival_s": 0.7083380185067654,
+    "chars": 3,
+    "gap_s": 0.007488131523132324,
+    "index": 95,
+    "preview": " or"
+  }
+]

@@ -44,6 +44,19 @@ tmp/
 logs/
 *.log
 
+
+# Local credentials and auth material
+.env
+.env.*
+*.pem
+*.key
+.netrc
+*_token
+*.token
+.hf_token
+huggingface/token
+**/huggingface/token
+
 # OS/editor noise
 .DS_Store
 .idea/

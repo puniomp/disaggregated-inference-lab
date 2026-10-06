@@ -1,0 +1,25 @@
+{
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "chat_template": "present",
+  "hidden_size": 4096,
+  "intermediate_size": 14336,
+  "max_position_embeddings": 131072,
+  "model_max_length": 131072,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 8,
+  "rope_scaling": {
+    "factor": 8.0,
+    "high_freq_factor": 4.0,
+    "low_freq_factor": 1.0,
+    "original_max_position_embeddings": 8192,
+    "rope_type": "llama3"
+  },
+  "snapshot_dir": "/workspace/.cache/huggingface/hub/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659",
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.42.3",
+  "vocab_size": 128256
+}

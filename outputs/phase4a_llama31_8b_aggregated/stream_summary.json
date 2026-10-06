@@ -1,0 +1,15 @@
+{
+  "completion_tokens": 96,
+  "content_preview": "**Prefill and Decode in an Aggregated LLM Server**\n\nHere's a brief overview of prefill and decode in an aggregated LLM (Large Language Model) server:\n\n* **Prefill**: Prefill is a technique used in aggregated LLM servers ",
+  "finish_reason": "length",
+  "inter_stream_event_gap_max_s": 0.007488131523132324,
+  "inter_stream_event_gap_p50_s": 0.006901824846863747,
+  "inter_stream_event_gap_p95_s": 0.007060803659260272,
+  "latency_s": 0.7090287320315838,
+  "prompt_tokens": 54,
+  "status": "ok",
+  "stream_events_with_content": 96,
+  "total_tokens": 150,
+  "tpot_s": 0.00687709042900487,
+  "ttft_s": 0.05501442775130272
+}

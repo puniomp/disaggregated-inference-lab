@@ -1,0 +1,5 @@
+approx_input_tokens_target,completion_tokens,concurrency,emitted_stream_chunks,error,finish_reason,inter_chunk_latency_avg_s,inter_chunk_latency_p50_s,inter_chunk_latency_p95_s,latency_s,max_output_tokens,model,output_chars,output_preview,profile,prompt_tokens,request_index,request_tpot_s,schema_version,status,timestamp_utc,total_tokens,ttft_s
+128,128,1,128,,length,0.0069592393436065806,0.006989210844039917,0.007070045918226242,0.9527601040899754,128,llama3.1-8b-instruct,614,"Based on the provided synthetic context, it appears to be a series of repeated key-value pairs related to a system's performance metrics. The key-value pairs include:
+
+- Profile: baseline
+- Request: 0",baseline,226,0,0.0069592393436065806,1,ok,2026-10-06T00:28:02.286720+00:00,354,0.06845727190375328

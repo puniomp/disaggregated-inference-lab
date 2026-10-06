@@ -2,14 +2,17 @@
 
 Hands-on lab for learning modern LLM serving architecture through incremental experiments.
 
-Current scope: Phase 0 through Phase 3.
+Current scope: Phase 0 through Phase 4A.
 
 - Phase 0 validates the architecture vocabulary and upstream documentation assumptions.
 - Phase 1 runs an aggregated SGLang baseline on one NVIDIA GPU.
 - Phase 2 benchmarks that aggregated SGLang baseline under different workloads and concurrency levels.
-- Phase 3 measures prefill/decode interference and compares no chunking against chunked prefill. The RTX 4090 run is preserved as historical evidence, and the H100 NVL chunk-size sweep is the new controlled baseline for later distributed-serving work.
+- Phase 3 measures mixed prefill/decode interference and chunked-prefill tuning. The RTX 4090 run is preserved as historical evidence, and the H100 NVL chunk-size sweep is the controlled baseline for later distributed-serving work.
+- Phase 4A transitions to `meta-llama/Llama-3.1-8B-Instruct` and validates a standalone one-GPU aggregated SGLang baseline.
 
-This repository intentionally does not yet include Dynamo, NIXL, prefill/decode disaggregation, multi-GPU serving, or Kubernetes.
+Next steps are Phase 4B, Dynamo + SGLang aggregated on one GPU; Phase 5, Dynamo prefill/decode disaggregation on separate GPUs; and Phase 6, a controlled aggregated-vs-P/D comparison.
+
+This repository intentionally does not yet include Dynamo, NIXL, prefill/decode disaggregation, multi-GPU serving, or Kubernetes implementations.
 
 ## Validated Environment
 
@@ -21,13 +24,23 @@ Phase 1 and Phase 2 were run on RunPod with:
 - Model: `Qwen/Qwen3-0.6B`
 - Served model name: `qwen3-0.6b`
 
-Phase 3 now also includes a controlled H100 NVL baseline sweep for the later aggregated-vs-disaggregated comparison:
+Phase 3 also includes a controlled H100 NVL chunk-size sweep for the later aggregated-vs-disaggregated comparison:
 
 - 1x NVIDIA H100 NVL
 - 95830 MiB VRAM
 - Driver `580.159.04`, CUDA `13.0`
 - SGLang `0.5.21`
 - Model: `Qwen/Qwen3-0.6B`
+
+Phase 4A establishes the new model baseline for distributed-serving work:
+
+- 1x NVIDIA H100 NVL
+- 95830 MiB VRAM
+- Driver `580.159.04`
+- SGLang `0.5.21`
+- Torch `2.13.0+cu130`
+- Model: `meta-llama/Llama-3.1-8B-Instruct`
+- Served model name: `llama3.1-8b-instruct`
 
 The validated architecture is aggregated inference:
 
@@ -62,6 +75,7 @@ Important documents:
 - `docs/phase1_sglang_baseline.md`: Phase 1 setup and validated run notes.
 - `docs/phase2_sglang_benchmarking.md`: Phase 2 methodology, measured results, interpretations, and limitations.
 - `docs/phase3_chunked_prefill_interference.md`: Phase 3 prefill/decode interference experiment and matched chunked-prefill A/B.
+- `docs/phase4a_llama31_sglang_baseline.md`: Phase 4A standalone Llama 3.1 8B aggregated SGLang baseline.
 
 ## Preserved Phase 2 Outputs
 
@@ -139,3 +153,18 @@ The new H100 NVL baseline sweep reran all chunked-prefill configurations fresh: 
 Do not compare RTX 4090 and H100 absolute latency numbers as a controlled hardware comparison.
 
 Do not infer GPU saturation, memory-bandwidth saturation, compute-bound behavior, or P/D disaggregation benefit from the current results alone.
+
+
+## Phase 4A Status
+
+Phase 4A is complete. It marks the deliberate transition from `Qwen/Qwen3-0.6B` to `meta-llama/Llama-3.1-8B-Instruct` for the remaining distributed-serving experiments.
+
+Validated architecture:
+
+```text
+Client -> SGLang 0.5.21 -> Llama 3.1 8B Instruct -> 1x H100 NVL
+```
+
+Prefill and decode remain colocated in one SGLang worker on one GPU. Dynamo is not installed or running, and P/D disaggregation is not configured.
+
+This is a functional baseline only. The single-request/concurrency-1 validation proves model load, OpenAI-compatible request handling, streaming, usage accounting, and benchmark instrumentation continuity. It is not a performance study, and its absolute values should not be compared against the earlier Qwen3-0.6B runs.

@@ -1,0 +1,38 @@
+{
+  "_client_latency_s": 0.5016485173255205,
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "matched_stop": 128009,
+      "message": {
+        "content": "An aggregated LLM serving baseline verifies that the performance of a large language model (LLM) improves when its outputs are aggregated from multiple instances, rather than relying on a single instance.",
+        "reasoning_content": null,
+        "role": "assistant",
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1791246430,
+  "id": "13b94471a75b401abb4593104b706c10",
+  "metadata": {
+    "weight_version": "default",
+    "weight_versions": [
+      {
+        "end": 38,
+        "start": 0,
+        "version": "default"
+      }
+    ]
+  },
+  "model": "llama3.1-8b-instruct",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 38,
+    "prompt_tokens": 50,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 0,
+    "total_tokens": 88
+  }
+}

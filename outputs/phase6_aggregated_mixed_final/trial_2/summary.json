@@ -1,0 +1,446 @@
+{
+  "architecture": "aggregated",
+  "model": "llama3.1-8b-instruct",
+  "results": {
+    "mixed": {
+      "active_at_injection": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "active_for_entire_injected_ttft_proxy_window": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "background_completion_tokens": [
+        768,
+        768,
+        768,
+        768
+      ],
+      "background_finish_reasons": [
+        "length",
+        "length",
+        "length",
+        "length"
+      ],
+      "background_gap_stats": {
+        "after": {
+          "count": 3040,
+          "max_s": 0.014607608318328857,
+          "p50_s": 0.0065660420805215836,
+          "p95_s": 0.007059507723897696,
+          "p99_s": 0.007642490323632956
+        },
+        "before": {
+          "count": 0,
+          "max_s": null,
+          "p50_s": null,
+          "p95_s": null,
+          "p99_s": null
+        },
+        "during": {
+          "count": 28,
+          "max_s": 0.3685495350509882,
+          "p50_s": 0.005705440416932106,
+          "p95_s": 0.367932147718966,
+          "p99_s": 0.36838677944615483
+        },
+        "per_stream": [
+          {
+            "after": {
+              "count": 760,
+              "max_s": 0.013684172183275223,
+              "p50_s": 0.006562459282577038,
+              "p95_s": 0.0070982943288981915,
+              "p99_s": 0.007568327207118268
+            },
+            "before": {
+              "count": 0,
+              "max_s": null,
+              "p50_s": null,
+              "p95_s": null,
+              "p99_s": null
+            },
+            "during": {
+              "count": 7,
+              "max_s": 0.3685495350509882,
+              "p50_s": 0.006129113957285881,
+              "p95_s": 0.2630395220592615,
+              "p99_s": 0.34744753245264276
+            },
+            "request_label": "mixed_background_decode_0"
+          },
+          {
+            "after": {
+              "count": 760,
+              "max_s": 0.014145834371447563,
+              "p50_s": 0.006562604568898678,
+              "p95_s": 0.007015984877943992,
+              "p99_s": 0.007637845240533351
+            },
+            "before": {
+              "count": 0,
+              "max_s": null,
+              "p50_s": null,
+              "p95_s": null,
+              "p99_s": null
+            },
+            "during": {
+              "count": 7,
+              "max_s": 0.36790505424141884,
+              "p50_s": 0.00566445104777813,
+              "p95_s": 0.2626012438908217,
+              "p99_s": 0.34684429217129925
+            },
+            "request_label": "mixed_background_decode_1"
+          },
+          {
+            "after": {
+              "count": 760,
+              "max_s": 0.014164432883262634,
+              "p50_s": 0.006567866541445255,
+              "p95_s": 0.007020223326981068,
+              "p99_s": 0.007707475721836089
+            },
+            "before": {
+              "count": 0,
+              "max_s": null,
+              "p50_s": null,
+              "p95_s": null,
+              "p99_s": null
+            },
+            "during": {
+              "count": 7,
+              "max_s": 0.36737542785704136,
+              "p50_s": 0.0055268146097660065,
+              "p95_s": 0.2623361738398669,
+              "p99_s": 0.3463675770536063
+            },
+            "request_label": "mixed_background_decode_2"
+          },
+          {
+            "after": {
+              "count": 760,
+              "max_s": 0.014607608318328857,
+              "p50_s": 0.006574287079274654,
+              "p95_s": 0.007055038399994372,
+              "p99_s": 0.007538951952010391
+            },
+            "before": {
+              "count": 0,
+              "max_s": null,
+              "p50_s": null,
+              "p95_s": null,
+              "p99_s": null
+            },
+            "during": {
+              "count": 7,
+              "max_s": 0.36794673651456833,
+              "p50_s": 0.0057464297860860825,
+              "p95_s": 0.2626511359587309,
+              "p99_s": 0.34688761640340077
+            },
+            "request_label": "mixed_background_decode_3"
+          }
+        ]
+      },
+      "during_definition": "client-observed prefill/TTFT proxy: injected request submission to injected first content token; not GPU kernel timing",
+      "injected": {
+        "all_stream_event_times_s": [
+          9608010.100715792,
+          9608010.107580522,
+          9608010.115052843,
+          9608010.122793194,
+          9608010.130302139,
+          9608010.1377614,
+          9608010.145089973,
+          9608010.152620856,
+          9608010.159640629,
+          9608010.16684268,
+          9608010.173792267,
+          9608010.180568947,
+          9608010.187813763,
+          9608010.194534115,
+          9608010.201448454,
+          9608010.207939144,
+          9608010.214755744,
+          9608010.22164676,
+          9608010.228369057,
+          9608010.234812208,
+          9608010.241662072,
+          9608010.248517264,
+          9608010.254938489,
+          9608010.261866456,
+          9608010.268331384,
+          9608010.274953809,
+          9608010.281589698,
+          9608010.288311,
+          9608010.295219272,
+          9608010.301909553,
+          9608010.308560064,
+          9608010.314877836,
+          9608010.321138708,
+          9608010.327810856,
+          9608010.334308485,
+          9608010.34081474,
+          9608010.347505832,
+          9608010.353784993,
+          9608010.360672748,
+          9608010.367050027,
+          9608010.37386456,
+          9608010.380272515,
+          9608010.386746148,
+          9608010.39340197,
+          9608010.399824549,
+          9608010.406616837,
+          9608010.413264908,
+          9608010.419624792,
+          9608010.426582508,
+          9608010.433235848,
+          9608010.440223455,
+          9608010.44697436,
+          9608010.454034768,
+          9608010.460973809,
+          9608010.46813965,
+          9608010.475154212,
+          9608010.482685786,
+          9608010.49012211,
+          9608010.497335736,
+          9608010.504655821,
+          9608010.51193974,
+          9608010.51919594,
+          9608010.526278924,
+          9608010.53463558,
+          9608010.535786737
+        ],
+        "architecture": "aggregated",
+        "cached_tokens": 32,
+        "client_estimated_prompt_tokens": 7984,
+        "completion_tokens": 64,
+        "content_event_times_s": [
+          9608010.100715792,
+          9608010.107580522,
+          9608010.115052843,
+          9608010.122793194,
+          9608010.130302139,
+          9608010.1377614,
+          9608010.145089973,
+          9608010.152620856,
+          9608010.159640629,
+          9608010.16684268,
+          9608010.173792267,
+          9608010.180568947,
+          9608010.187813763,
+          9608010.194534115,
+          9608010.201448454,
+          9608010.207939144,
+          9608010.214755744,
+          9608010.22164676,
+          9608010.228369057,
+          9608010.234812208,
+          9608010.241662072,
+          9608010.248517264,
+          9608010.254938489,
+          9608010.261866456,
+          9608010.268331384,
+          9608010.274953809,
+          9608010.281589698,
+          9608010.288311,
+          9608010.295219272,
+          9608010.301909553,
+          9608010.308560064,
+          9608010.314877836,
+          9608010.321138708,
+          9608010.327810856,
+          9608010.334308485,
+          9608010.34081474,
+          9608010.347505832,
+          9608010.353784993,
+          9608010.360672748,
+          9608010.367050027,
+          9608010.37386456,
+          9608010.380272515,
+          9608010.386746148,
+          9608010.39340197,
+          9608010.399824549,
+          9608010.406616837,
+          9608010.413264908,
+          9608010.419624792,
+          9608010.426582508,
+          9608010.433235848,
+          9608010.440223455,
+          9608010.44697436,
+          9608010.454034768,
+          9608010.460973809,
+          9608010.46813965,
+          9608010.475154212,
+          9608010.482685786,
+          9608010.49012211,
+          9608010.497335736,
+          9608010.504655821,
+          9608010.51193974,
+          9608010.51919594,
+          9608010.526278924,
+          9608010.53463558
+        ],
+        "decode_worker_id": "16531567478749348678",
+        "e2e_latency_s": 0.838882053270936,
+        "error": null,
+        "error_body": null,
+        "finish_reason": "length",
+        "finish_s": 9608010.53597383,
+        "first_content_token_s": 9608010.100715792,
+        "frontend_log_excerpt": "\u001b[2m2026-10-06T20:21:28.868764Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_llm::http::service::metrics\u001b[0m\u001b[2m:\u001b[0m request received \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mfc4eca94-cc95-48ac-9159-9f498dbddd5e \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0mllama3.1-8b-instruct \u001b[3mendpoint\u001b[0m\u001b[2m=\u001b[0mchat_completions \u001b[3mrequest_type\u001b[0m\u001b[2m=\u001b[0mstream \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mbfbbed8f-95bc-4fe4-8d93-dbd55366841b \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m\n\u001b[2m2026-10-06T20:21:28.882965Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_unified\u001b[0m\u001b[2m:\u001b[0m unified parser path decision \u001b[3mtool_call_parser\u001b[0m\u001b[2m=\u001b[0mNone \u001b[3mreasoning_parser\u001b[0m\u001b[2m=\u001b[0mNone \u001b[3mconfigured\u001b[0m\u001b[2m=\u001b[0mNone \u001b[3mflag_on\u001b[0m\u001b[2m=\u001b[0mfalse \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mbfbbed8f-95bc-4fe4-8d93-dbd55366841b \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m\n\u001b[2m2026-10-06T20:21:28.885329Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_runtime::pipeline::network::egress::push_router\u001b[0m\u001b[2m:\u001b[0m Selected worker \u001b[3mrouter_mode\u001b[0m\u001b[2m=\u001b[0m\"round-robin\" \u001b[3mworker_id\u001b[0m\u001b[2m=\u001b[0m16531567478749348678 \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mbfbbed8f-95bc-4fe4-8d93-dbd55366841b \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m\n\u001b[2m2026-10-06T20:21:28.885505Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_llm::http::service::service_v2\u001b[0m\u001b[2m:\u001b[0m http response sent \u001b[3mstatus\u001b[0m\u001b[2m=\u001b[0m200 \u001b[3mlatency_ms\u001b[0m\u001b[2m=\u001b[0m17 \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mbfbbed8f-95bc-4fe4-8d93-dbd55366841b \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m\n\u001b[2m2026-10-06T20:21:29.706282Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m:\u001b[1mrouter.route_request\u001b[0m: \u001b[2mrequest_span\u001b[0m\u001b[2m:\u001b[0m route request completed \u001b[3mrequest.outcome\u001b[0m\u001b[2m=\u001b[0m\"success\" \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mbfbbed8f-95bc-4fe4-8d93-dbd55366841b \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m \u001b[2m\u001b[3motel.kind\u001b[0m\u001b[2m=\u001b[0m\"client\" \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mfc4eca94-cc95-48ac-9159-9f498dbddd5e \u001b[3mrouter_mode\u001b[0m\u001b[2m=\u001b[0mRoundRobin \u001b[3mworker_id\u001b[0m\u001b[2m=\u001b[0m16531567478749348678 \u001b[3mrequest.attempt\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mmigration.is_retry\u001b[0m\u001b[2m=\u001b[0mfalse \u001b[3mmigration.tokens_completed\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mrequest.outcome\u001b[0m\u001b[2m=\u001b[0m\"success\"\u001b[0m\n\u001b[2m2026-10-06T20:21:29.706464Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_llm::http::service::metrics\u001b[0m\u001b[2m:\u001b[0m request completed \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mfc4eca94-cc95-48ac-9159-9f498dbddd5e \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0mllama3.1-8b-instruct \u001b[3mendpoint\u001b[0m\u001b[2m=\u001b[0mchat_completions \u001b[3mrequest_type\u001b[0m\u001b[2m=\u001b[0mstream \u001b[3mstatus\u001b[0m\u001b[2m=\u001b[0msuccess \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m837 \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0mbfbbed8f-95bc-4fe4-8d93-dbd55366841b \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\" \u001b[3minput_tokens\u001b[0m\u001b[2m=\u001b[0m7984 \u001b[3moutput_tokens\u001b[0m\u001b[2m=\u001b[0m64 \u001b[3mimage_count\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mvideo_count\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3maudio_count\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mttft_ms\u001b[0m\u001b[2m=\u001b[0m\"402.30\" \u001b[3mavg_itl_ms\u001b[0m\u001b[2m=\u001b[0m\"6.89\" \u001b[3mprefill_worker_id\u001b[0m\u001b[2m=\u001b[0m16531567478749348678 \u001b[3mdecode_worker_id\u001b[0m\u001b[2m=\u001b[0m16531567478749348678 \u001b[3mrequest.outcome\u001b[0m\u001b[2m=\u001b[0m\"success\"\u001b[0m\n",
+        "frontend_worker_line": {
+          "decode_worker_id": "16531567478749348678",
+          "dynamo_request_id": "fc4eca94-cc95-48ac-9159-9f498dbddd5e",
+          "elapsed_ms": "837",
+          "input_tokens": "7984",
+          "output_tokens": "64",
+          "prefill_worker_id": "16531567478749348678",
+          "raw_line": "2026-10-06T20:21:29.706464Z  INFO http-request: dynamo_llm::http::service::metrics: request completed request_id=fc4eca94-cc95-48ac-9159-9f498dbddd5e model=llama3.1-8b-instruct endpoint=chat_completions request_type=stream status=success elapsed_ms=837 method=POST uri=/v1/chat/completions version=HTTP/1.1 request_id=bfbbed8f-95bc-4fe4-8d93-dbd55366841b model=\"llama3.1-8b-instruct\" input_tokens=7984 output_tokens=64 image_count=0 video_count=0 audio_count=0 ttft_ms=\"402.30\" avg_itl_ms=\"6.89\" prefill_worker_id=16531567478749348678 decode_worker_id=16531567478749348678 request.outcome=\"success\"",
+          "ttft_ms": "402.30"
+        },
+        "http_status": 200,
+        "inter_content_event_gaps_s": [
+          0.006864730268716812,
+          0.007472321391105652,
+          0.007740350440144539,
+          0.007508944720029831,
+          0.007459260523319244,
+          0.007328573614358902,
+          0.007530882954597473,
+          0.0070197731256484985,
+          0.00720205157995224,
+          0.006949586793780327,
+          0.006776679307222366,
+          0.0072448160499334335,
+          0.006720352917909622,
+          0.00691433809697628,
+          0.006490690633654594,
+          0.006816599518060684,
+          0.006891015917062759,
+          0.006722297519445419,
+          0.006443150341510773,
+          0.0068498644977808,
+          0.0068551916629076,
+          0.006421225145459175,
+          0.006927967071533203,
+          0.006464928388595581,
+          0.006622424349188805,
+          0.006635889410972595,
+          0.00672130286693573,
+          0.006908271461725235,
+          0.006690280511975288,
+          0.006650511175394058,
+          0.0063177719712257385,
+          0.006260871887207031,
+          0.006672147661447525,
+          0.00649762898683548,
+          0.006506254896521568,
+          0.006691092625260353,
+          0.00627916119992733,
+          0.006887754425406456,
+          0.006377279758453369,
+          0.006814531981945038,
+          0.006407955661416054,
+          0.006473632529377937,
+          0.006655821576714516,
+          0.006422579288482666,
+          0.006792288273572922,
+          0.006648071110248566,
+          0.006359884515404701,
+          0.006957715377211571,
+          0.00665334053337574,
+          0.006987607106566429,
+          0.006750904023647308,
+          0.007060408592224121,
+          0.006939040496945381,
+          0.00716584175825119,
+          0.00701456144452095,
+          0.007531573995947838,
+          0.007436323910951614,
+          0.007213626056909561,
+          0.0073200855404138565,
+          0.007283918559551239,
+          0.007256200537085533,
+          0.0070829838514328,
+          0.008356655016541481
+        ],
+        "inter_content_event_summary_s": {
+          "count": 63,
+          "max_s": 0.008356655016541481,
+          "p50_s": 0.0068498644977808,
+          "p95_s": 0.007528689131140709,
+          "p99_s": 0.007974546179175378
+        },
+        "prefill_worker_id": "16531567478749348678",
+        "request_index": 1000,
+        "request_label": "mixed_injected_prefill",
+        "response_id": "chatcmpl-fc4eca94-cc95-48ac-9159-9f498dbddd5e",
+        "run_id": "phase6-agg-mixed-final-trial2-20261006-202122",
+        "server_prompt_tokens": 7984,
+        "start_s": 9608009.697091777,
+        "start_wall_time": 1791318088.8678925,
+        "text_preview": "There are 118 records in total. Each record contains a unique set of fields, including:\n\n- trace: a unique identifier\n- shard: a unique identifier\n- route: a unique identifier\n- value: a unique value\n- checksum: a unique checksum\n\nThese records appear to be related to cache-resistant pre",
+        "total_tokens": 8048,
+        "tpot_s": 0.006908857751460303,
+        "ttft_s": 0.40362401492893696,
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 7984,
+          "prompt_tokens_details": {
+            "cached_tokens": 32
+          },
+          "total_tokens": 8048
+        },
+        "worker_ids_differ": false
+      },
+      "prefill_chunk_pairs": [
+        {
+          "cached_token": 80,
+          "line": "2026-10-06T20:21:28.861576Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 1, #new-token: 7, #cached-token: 80, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 0.57",
+          "new_token": 7
+        },
+        {
+          "cached_token": 240,
+          "line": "2026-10-06T20:21:28.864553Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 3, #new-token: 21, #cached-token: 240, token usage: 0.00, #running-req: 1, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 6886.13",
+          "new_token": 21
+        },
+        {
+          "cached_token": 32,
+          "line": "2026-10-06T20:21:29.071179Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 32, token usage: 0.02, #running-req: 4, #queue-req: 0, #pending-token: 3856, cuda graph: False, input throughput (token/s): 19822.03",
+          "new_token": 4096
+        },
+        {
+          "cached_token": 0,
+          "line": "2026-10-06T20:21:29.268049Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 1, #new-token: 3856, #cached-token: 0, token usage: 0.02, #running-req: 4, #queue-req: 0, #pending-token: 0, cuda graph: False, input throughput (token/s): 19591.33",
+          "new_token": 3856
+        }
+      ],
+      "success_criteria": {
+        "all_4_background_streams_active_when_injection_occurs": true,
+        "all_http_200": true,
+        "background_decode_active_through_injected_ttft_proxy": true,
+        "each_background_ge_500_completion_tokens": true,
+        "injected_cached_tokens_small_relative_to_prompt": true,
+        "injected_prompt_7500_8500_tokens": true,
+        "sufficient_before_during_after_observations": false
+      },
+      "workload": "mixed"
+    }
+  },
+  "run_id": "phase6-agg-mixed-final-trial2-20261006-202122",
+  "topology_note": {
+    "current_experimental_pod": "GPU0 <-> GPU1 = NODE; both GPUs NUMA affinity 0",
+    "interpretation": "Cross-pod latency numbers are historical/reference results, not topology-identical controls.",
+    "previous_pd_validation_pod": "GPU0 <-> GPU1 = SYS; GPUs on different NUMA nodes"
+  },
+  "workloads": [
+    "mixed"
+  ]
+}

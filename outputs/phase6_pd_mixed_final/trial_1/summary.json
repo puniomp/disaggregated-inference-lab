@@ -1,0 +1,451 @@
+{
+  "architecture": "pd",
+  "model": "llama3.1-8b-instruct",
+  "results": {
+    "mixed": {
+      "active_at_injection": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "active_for_entire_injected_ttft_proxy_window": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "background_completion_tokens": [
+        768,
+        768,
+        768,
+        768
+      ],
+      "background_finish_reasons": [
+        "length",
+        "length",
+        "length",
+        "length"
+      ],
+      "background_gap_stats": {
+        "after": {
+          "count": 2721,
+          "max_s": 0.012985460460186005,
+          "p50_s": 0.006480395793914795,
+          "p95_s": 0.007061151787638664,
+          "p99_s": 0.00754499137401581
+        },
+        "before": {
+          "count": 47,
+          "max_s": 0.10050815530121326,
+          "p50_s": 0.005832992494106293,
+          "p95_s": 0.008457256108522403,
+          "p99_s": 0.0993595752865076
+        },
+        "during": {
+          "count": 300,
+          "max_s": 0.014153849333524704,
+          "p50_s": 0.006029544398188591,
+          "p95_s": 0.0066628196276724335,
+          "p99_s": 0.008066237289458508
+        },
+        "per_stream": [
+          {
+            "after": {
+              "count": 691,
+              "max_s": 0.012422936037182808,
+              "p50_s": 0.0064825639128685,
+              "p95_s": 0.007037699222564697,
+              "p99_s": 0.007501712255179883
+            },
+            "before": {
+              "count": 1,
+              "max_s": 0.10050815530121326,
+              "p50_s": 0.10050815530121326,
+              "p95_s": 0.10050815530121326,
+              "p99_s": 0.10050815530121326
+            },
+            "during": {
+              "count": 75,
+              "max_s": 0.008058654144406319,
+              "p50_s": 0.006020389497280121,
+              "p95_s": 0.006667684763669968,
+              "p99_s": 0.0071317156776785915
+            },
+            "request_label": "mixed_background_decode_0"
+          },
+          {
+            "after": {
+              "count": 646,
+              "max_s": 0.012921957299113274,
+              "p50_s": 0.006472458131611347,
+              "p95_s": 0.00706846360117197,
+              "p99_s": 0.0076596465893089705
+            },
+            "before": {
+              "count": 46,
+              "max_s": 0.09801124222576618,
+              "p50_s": 0.005816713906824589,
+              "p95_s": 0.006341459695249796,
+              "p99_s": 0.05811368990689491
+            },
+            "during": {
+              "count": 75,
+              "max_s": 0.008816968649625778,
+              "p50_s": 0.0060169510543346405,
+              "p95_s": 0.006660334393382072,
+              "p99_s": 0.007529628314077863
+            },
+            "request_label": "mixed_background_decode_1"
+          },
+          {
+            "after": {
+              "count": 692,
+              "max_s": 0.012406628578901291,
+              "p50_s": 0.006492495536804199,
+              "p95_s": 0.007069262955337763,
+              "p99_s": 0.007536794152110817
+            },
+            "before": {
+              "count": 0,
+              "max_s": null,
+              "p50_s": null,
+              "p95_s": null,
+              "p99_s": null
+            },
+            "during": {
+              "count": 75,
+              "max_s": 0.014153849333524704,
+              "p50_s": 0.006058044731616974,
+              "p95_s": 0.006630215048789977,
+              "p99_s": 0.008793540038168467
+            },
+            "request_label": "mixed_background_decode_2"
+          },
+          {
+            "after": {
+              "count": 692,
+              "max_s": 0.012985460460186005,
+              "p50_s": 0.006474202498793602,
+              "p95_s": 0.0070572055876255025,
+              "p99_s": 0.007555399481207138
+            },
+            "before": {
+              "count": 0,
+              "max_s": null,
+              "p50_s": null,
+              "p95_s": null,
+              "p99_s": null
+            },
+            "during": {
+              "count": 75,
+              "max_s": 0.01396181620657444,
+              "p50_s": 0.006025148555636406,
+              "p95_s": 0.006562051735818386,
+              "p99_s": 0.008962902575731312
+            },
+            "request_label": "mixed_background_decode_3"
+          }
+        ]
+      },
+      "during_definition": "client-observed prefill/TTFT proxy: injected request submission to injected first content token; not GPU kernel timing",
+      "injected": {
+        "all_stream_event_times_s": [
+          9609113.971590796,
+          9609113.9843423,
+          9609113.990314877,
+          9609113.99659666,
+          9609114.002713488,
+          9609114.0091824,
+          9609114.015532032,
+          9609114.022087112,
+          9609114.028674468,
+          9609114.035327755,
+          9609114.0421126,
+          9609114.049151065,
+          9609114.056220816,
+          9609114.06299815,
+          9609114.069966508,
+          9609114.07690016,
+          9609114.08366306,
+          9609114.090601947,
+          9609114.097142134,
+          9609114.103792688,
+          9609114.110820455,
+          9609114.117176397,
+          9609114.1239567,
+          9609114.130388323,
+          9609114.137069212,
+          9609114.14366397,
+          9609114.150311818,
+          9609114.156952048,
+          9609114.163584644,
+          9609114.170451082,
+          9609114.176965384,
+          9609114.183470292,
+          9609114.18967904,
+          9609114.196828648,
+          9609114.202915968,
+          9609114.209807284,
+          9609114.216480708,
+          9609114.223072592,
+          9609114.229630131,
+          9609114.23623323,
+          9609114.242489913,
+          9609114.24919277,
+          9609114.255570415,
+          9609114.262426095,
+          9609114.268894512,
+          9609114.275761588,
+          9609114.282550888,
+          9609114.28884388,
+          9609114.295639664,
+          9609114.301932128,
+          9609114.308500892,
+          9609114.31583189,
+          9609114.322888052,
+          9609114.330292547,
+          9609114.337438112,
+          9609114.345031092,
+          9609114.352160372,
+          9609114.359503992,
+          9609114.366800666,
+          9609114.3741062,
+          9609114.381133825,
+          9609114.388190627,
+          9609114.395174248,
+          9609114.403475543,
+          9609114.404755652
+        ],
+        "architecture": "pd",
+        "cached_tokens": 32,
+        "client_estimated_prompt_tokens": 7990,
+        "completion_tokens": 64,
+        "content_event_times_s": [
+          9609113.971590796,
+          9609113.9843423,
+          9609113.990314877,
+          9609113.99659666,
+          9609114.002713488,
+          9609114.0091824,
+          9609114.015532032,
+          9609114.022087112,
+          9609114.028674468,
+          9609114.035327755,
+          9609114.0421126,
+          9609114.049151065,
+          9609114.056220816,
+          9609114.06299815,
+          9609114.069966508,
+          9609114.07690016,
+          9609114.08366306,
+          9609114.090601947,
+          9609114.097142134,
+          9609114.103792688,
+          9609114.110820455,
+          9609114.117176397,
+          9609114.1239567,
+          9609114.130388323,
+          9609114.137069212,
+          9609114.14366397,
+          9609114.150311818,
+          9609114.156952048,
+          9609114.163584644,
+          9609114.170451082,
+          9609114.176965384,
+          9609114.183470292,
+          9609114.18967904,
+          9609114.196828648,
+          9609114.202915968,
+          9609114.209807284,
+          9609114.216480708,
+          9609114.223072592,
+          9609114.229630131,
+          9609114.23623323,
+          9609114.242489913,
+          9609114.24919277,
+          9609114.255570415,
+          9609114.262426095,
+          9609114.268894512,
+          9609114.275761588,
+          9609114.282550888,
+          9609114.28884388,
+          9609114.295639664,
+          9609114.301932128,
+          9609114.308500892,
+          9609114.31583189,
+          9609114.322888052,
+          9609114.330292547,
+          9609114.337438112,
+          9609114.345031092,
+          9609114.352160372,
+          9609114.359503992,
+          9609114.366800666,
+          9609114.3741062,
+          9609114.381133825,
+          9609114.388190627,
+          9609114.395174248,
+          9609114.403475543
+        ],
+        "decode_worker_id": "2781745392906329313",
+        "e2e_latency_s": 0.8948116656392813,
+        "error": null,
+        "error_body": null,
+        "finish_reason": "length",
+        "finish_s": 9609114.40501282,
+        "first_content_token_s": 9609113.971590796,
+        "frontend_log_excerpt": "hat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m85d8a3ce-975b-478d-87eb-91375d903d2a \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m\n\u001b[2m2026-10-06T20:39:52.717589Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_runtime::pipeline::network::egress::push_router\u001b[0m\u001b[2m:\u001b[0m Selected worker \u001b[3mrouter_mode\u001b[0m\u001b[2m=\u001b[0m\"round-robin\" \u001b[3mworker_id\u001b[0m\u001b[2m=\u001b[0m4748701478899020058 \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m85d8a3ce-975b-478d-87eb-91375d903d2a \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m\n\u001b[2m2026-10-06T20:39:52.720431Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_runtime::pipeline::network::egress::push_router\u001b[0m\u001b[2m:\u001b[0m Selected worker \u001b[3mrouter_mode\u001b[0m\u001b[2m=\u001b[0m\"round-robin\" \u001b[3mworker_id\u001b[0m\u001b[2m=\u001b[0m2781745392906329313 \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m85d8a3ce-975b-478d-87eb-91375d903d2a \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m\n\u001b[2m2026-10-06T20:39:52.720665Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_llm::http::service::service_v2\u001b[0m\u001b[2m:\u001b[0m http response sent \u001b[3mstatus\u001b[0m\u001b[2m=\u001b[0m200 \u001b[3mlatency_ms\u001b[0m\u001b[2m=\u001b[0m38 \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m85d8a3ce-975b-478d-87eb-91375d903d2a \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m\n\u001b[2m2026-10-06T20:39:53.139419Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m:\u001b[1mrouter.route_request\u001b[0m: \u001b[2mrequest_span\u001b[0m\u001b[2m:\u001b[0m route request completed \u001b[3mrequest.outcome\u001b[0m\u001b[2m=\u001b[0m\"success\" \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m85d8a3ce-975b-478d-87eb-91375d903d2a \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m \u001b[2m\u001b[3motel.kind\u001b[0m\u001b[2m=\u001b[0m\"client\" \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m417a4995-ce50-419c-b0e3-7618929b23df \u001b[3mrouter_mode\u001b[0m\u001b[2m=\u001b[0mRoundRobin \u001b[3mworker_id\u001b[0m\u001b[2m=\u001b[0m4748701478899020058 \u001b[3mrequest.attempt\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mmigration.is_retry\u001b[0m\u001b[2m=\u001b[0mfalse \u001b[3mrequest.outcome\u001b[0m\u001b[2m=\u001b[0m\"success\"\u001b[0m\n\u001b[2m2026-10-06T20:39:53.575242Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m:\u001b[1mrouter.route_request\u001b[0m: \u001b[2mrequest_span\u001b[0m\u001b[2m:\u001b[0m route request completed \u001b[3mrequest.outcome\u001b[0m\u001b[2m=\u001b[0m\"success\" \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m85d8a3ce-975b-478d-87eb-91375d903d2a \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\"\u001b[0m \u001b[2m\u001b[3motel.kind\u001b[0m\u001b[2m=\u001b[0m\"client\" \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m417a4995-ce50-419c-b0e3-7618929b23df \u001b[3mrouter_mode\u001b[0m\u001b[2m=\u001b[0mRoundRobin \u001b[3mworker_id\u001b[0m\u001b[2m=\u001b[0m2781745392906329313 \u001b[3mrequest.attempt\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mmigration.is_retry\u001b[0m\u001b[2m=\u001b[0mfalse \u001b[3mmigration.tokens_completed\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mrequest.outcome\u001b[0m\u001b[2m=\u001b[0m\"success\"\u001b[0m\n\u001b[2m2026-10-06T20:39:53.575452Z\u001b[0m \u001b[32m INFO\u001b[0m \u001b[1mhttp-request\u001b[0m: \u001b[2mdynamo_llm::http::service::metrics\u001b[0m\u001b[2m:\u001b[0m request completed \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m417a4995-ce50-419c-b0e3-7618929b23df \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0mllama3.1-8b-instruct \u001b[3mendpoint\u001b[0m\u001b[2m=\u001b[0mchat_completions \u001b[3mrequest_type\u001b[0m\u001b[2m=\u001b[0mstream \u001b[3mstatus\u001b[0m\u001b[2m=\u001b[0msuccess \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m893 \u001b[2m\u001b[3mmethod\u001b[0m\u001b[2m=\u001b[0mPOST \u001b[3muri\u001b[0m\u001b[2m=\u001b[0m/v1/chat/completions \u001b[3mversion\u001b[0m\u001b[2m=\u001b[0mHTTP/1.1 \u001b[3mrequest_id\u001b[0m\u001b[2m=\u001b[0m85d8a3ce-975b-478d-87eb-91375d903d2a \u001b[3mmodel\u001b[0m\u001b[2m=\u001b[0m\"llama3.1-8b-instruct\" \u001b[3minput_tokens\u001b[0m\u001b[2m=\u001b[0m7990 \u001b[3moutput_tokens\u001b[0m\u001b[2m=\u001b[0m64 \u001b[3mimage_count\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mvideo_count\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3maudio_count\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mttft_ms\u001b[0m\u001b[2m=\u001b[0m\"459.64\" \u001b[3mavg_itl_ms\u001b[0m\u001b[2m=\u001b[0m\"6.86\" \u001b[3mprefill_worker_id\u001b[0m\u001b[2m=\u001b[0m4748701478899020058 \u001b[3mdecode_worker_id\u001b[0m\u001b[2m=\u001b[0m2781745392906329313 \u001b[3mrequest.outcome\u001b[0m\u001b[2m=\u001b[0m\"success\"\u001b[0m\n",
+        "frontend_worker_line": {
+          "decode_worker_id": "2781745392906329313",
+          "dynamo_request_id": "417a4995-ce50-419c-b0e3-7618929b23df",
+          "elapsed_ms": "893",
+          "input_tokens": "7990",
+          "output_tokens": "64",
+          "prefill_worker_id": "4748701478899020058",
+          "raw_line": "2026-10-06T20:39:53.575452Z  INFO http-request: dynamo_llm::http::service::metrics: request completed request_id=417a4995-ce50-419c-b0e3-7618929b23df model=llama3.1-8b-instruct endpoint=chat_completions request_type=stream status=success elapsed_ms=893 method=POST uri=/v1/chat/completions version=HTTP/1.1 request_id=85d8a3ce-975b-478d-87eb-91375d903d2a model=\"llama3.1-8b-instruct\" input_tokens=7990 output_tokens=64 image_count=0 video_count=0 audio_count=0 ttft_ms=\"459.64\" avg_itl_ms=\"6.86\" prefill_worker_id=4748701478899020058 decode_worker_id=2781745392906329313 request.outcome=\"success\"",
+          "ttft_ms": "459.64"
+        },
+        "http_status": 200,
+        "inter_content_event_gaps_s": [
+          0.01275150291621685,
+          0.005972577258944511,
+          0.006281783804297447,
+          0.006116827949881554,
+          0.006468910723924637,
+          0.006349632516503334,
+          0.006555080413818359,
+          0.006587356328964233,
+          0.006653286516666412,
+          0.006784845143556595,
+          0.007038464769721031,
+          0.007069751620292664,
+          0.006777333095669746,
+          0.006968358531594276,
+          0.006933651864528656,
+          0.006762899458408356,
+          0.006938887760043144,
+          0.006540186703205109,
+          0.0066505540162324905,
+          0.007027767598628998,
+          0.006355941295623779,
+          0.00678030401468277,
+          0.006431622430682182,
+          0.006680889055132866,
+          0.006594758480787277,
+          0.006647847592830658,
+          0.006640229374170303,
+          0.006632596254348755,
+          0.006866438314318657,
+          0.006514301523566246,
+          0.006504908204078674,
+          0.006208747625350952,
+          0.007149608805775642,
+          0.006087319925427437,
+          0.006891315802931786,
+          0.006673423573374748,
+          0.006591884419322014,
+          0.006557539105415344,
+          0.0066030994057655334,
+          0.006256682798266411,
+          0.006702857092022896,
+          0.006377644836902618,
+          0.006855679675936699,
+          0.006468417122960091,
+          0.006867075338959694,
+          0.006789300590753555,
+          0.00629299134016037,
+          0.006795784458518028,
+          0.0062924642115831375,
+          0.00656876340508461,
+          0.007330998778343201,
+          0.0070561617612838745,
+          0.007404495030641556,
+          0.007145565003156662,
+          0.007592979818582535,
+          0.007129279896616936,
+          0.00734362006187439,
+          0.007296673953533173,
+          0.007305534556508064,
+          0.007027624174952507,
+          0.00705680251121521,
+          0.006983621045947075,
+          0.008301295340061188
+        ],
+        "inter_content_event_summary_s": {
+          "count": 63,
+          "max_s": 0.01275150291621685,
+          "p50_s": 0.006702857092022896,
+          "p95_s": 0.007398407533764839,
+          "p99_s": 0.009992374219000351
+        },
+        "prefill_worker_id": "4748701478899020058",
+        "request_index": 1000,
+        "request_label": "mixed_injected_prefill",
+        "response_id": "chatcmpl-417a4995-ce50-419c-b0e3-7618929b23df",
+        "run_id": "phase6-pd-mixed-final-trial1-20261006-203946",
+        "server_prompt_tokens": 7990,
+        "start_s": 9609113.510201154,
+        "start_wall_time": 1791319192.6810029,
+        "text_preview": "There are 118 records in total. Each record contains a unique set of fields, including:\n\n- trace: a unique identifier\n- shard: a unique identifier\n- route: a unique identifier\n- value: a unique value\n- checksum: a unique checksum\n\nThese records appear to be related to cache-resistant pre",
+        "total_tokens": 8054,
+        "tpot_s": 0.0068797146576264545,
+        "ttft_s": 0.4613896422088146,
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 7990,
+          "prompt_tokens_details": {
+            "cached_tokens": 32
+          },
+          "total_tokens": 8054
+        },
+        "worker_ids_differ": true
+      },
+      "prefill_chunk_pairs": [
+        {
+          "cached_token": 80,
+          "line": "2026-10-06T20:39:52.316486Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 1, #new-token: 7, #cached-token: 80, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, #bootstrap-req: 2, #inflight-req: 1, #optimistic-req: 0, cuda graph: False, input throughput (token/s): 0.09",
+          "new_token": 7
+        },
+        {
+          "cached_token": 80,
+          "line": "2026-10-06T20:39:52.573166Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 1, #new-token: 7, #cached-token: 80, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, #bootstrap-req: 0, #inflight-req: 1, #optimistic-req: 0, cuda graph: False, input throughput (token/s): 27.27",
+          "new_token": 7
+        },
+        {
+          "cached_token": 160,
+          "line": "2026-10-06T20:39:52.575343Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 2, #new-token: 14, #cached-token: 160, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, #bootstrap-req: 0, #inflight-req: 3, #optimistic-req: 0, cuda graph: False, input throughput (token/s): 6270.29",
+          "new_token": 14
+        },
+        {
+          "cached_token": 32,
+          "line": "2026-10-06T20:39:52.944538Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 1, #new-token: 4096, #cached-token: 32, token usage: 0.02, #running-req: 0, #queue-req: 0, #pending-token: 3862, #bootstrap-req: 0, #inflight-req: 0, #optimistic-req: 0, cuda graph: False, input throughput (token/s): 11096.16",
+          "new_token": 4096
+        },
+        {
+          "cached_token": 0,
+          "line": "2026-10-06T20:39:53.115339Z  INFO metrics_reporter.report_prefill_stats: Prefill batch, #new-seq: 1, #new-token: 3862, #cached-token: 0, token usage: 0.02, #running-req: 0, #queue-req: 0, #pending-token: 0, #bootstrap-req: 0, #inflight-req: 1, #optimistic-req: 0, cuda graph: False, input throughput (token/s): 22607.56",
+          "new_token": 3862
+        }
+      ],
+      "success_criteria": {
+        "all_4_background_streams_active_when_injection_occurs": true,
+        "all_http_200": true,
+        "background_decode_active_through_injected_ttft_proxy": true,
+        "each_background_ge_500_completion_tokens": true,
+        "injected_cached_tokens_small_relative_to_prompt": true,
+        "injected_prompt_7500_8500_tokens": true,
+        "sufficient_before_during_after_observations": true
+      },
+      "workload": "mixed"
+    }
+  },
+  "run_id": "phase6-pd-mixed-final-trial1-20261006-203946",
+  "topology_note": {
+    "current_experimental_pod": "GPU0 <-> GPU1 = NODE; both GPUs NUMA affinity 0",
+    "interpretation": "Cross-pod latency numbers are historical/reference results, not topology-identical controls.",
+    "previous_pd_validation_pod": "GPU0 <-> GPU1 = SYS; GPUs on different NUMA nodes"
+  },
+  "workloads": [
+    "mixed"
+  ]
+}

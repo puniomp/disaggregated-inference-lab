@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "latency_s": 0.5591864883899689,
+  "ttft_s": 0.02882537618279457,
+  "event_count": 93,
+  "inter_stream_p50_s": 0.005838816985487938,
+  "inter_stream_p95_s": 0.00607144758105278,
+  "inter_stream_max_s": 0.008477095514535904,
+  "usage": {
+    "prompt_tokens": 52,
+    "completion_tokens": 92,
+    "total_tokens": 144,
+    "prompt_tokens_details": {
+      "cached_tokens": 16
+    }
+  },
+  "request_note": "functional instrumentation validation, not performance comparison",
+  "output_tokens_per_s_e2e": 164.52471923077024,
+  "tpot_s_request_avg": 0.005828144090188728
+}

@@ -1,0 +1,8 @@
+== launch env ==
+DYN_DISCOVERY_BACKEND=file
+DYN_FILE_KV=/tmp/dynamo_file_kv
+DYN_HTTP_PORT=8000
+DYN_SYSTEM_PORT=8081
+DYN_CHAT_PROCESSOR=sglang
+CUDA_VISIBLE_DEVICES=0
+frontend_pid=575 worker_pid=576

@@ -1,0 +1,11 @@
+python 3.12.3
+ai-dynamo 1.6.0.dev20261004
+ai-dynamo-runtime 1.6.0.dev20261004
+sglang 0.5.19
+torch 2.13.0
+huggingface-hub 1.33.0
+nixl 1.4.0
+nixl-cu13 1.4.0
+torch.version.cuda 13.0
+torch.cuda.is_available True
+torch.cuda.device NVIDIA H100 NVL

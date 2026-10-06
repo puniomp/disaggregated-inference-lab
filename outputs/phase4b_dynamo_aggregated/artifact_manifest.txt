@@ -1,0 +1,19 @@
+frontend.failed_jit_round.log	11189 bytes	ignored runtime log/pid
+frontend.failed_model_path.log	2609 bytes	ignored runtime log/pid
+frontend.failed_no_model_path_2.log	4492 bytes	ignored runtime log/pid
+frontend.log	16952 bytes	ignored runtime log/pid
+frontend.pid	5 bytes	ignored runtime log/pid
+git_status.txt	60 bytes	intentional artifact
+launch_summary.txt	197 bytes	intentional artifact
+log_evidence.txt	55285 bytes	intentional artifact
+models.json	137 bytes	intentional artifact
+non_stream_response.json	606 bytes	intentional artifact
+runtime_evidence.txt	3369 bytes	intentional artifact
+software_versions.txt	242 bytes	intentional artifact
+stream_events.json	39354 bytes	intentional artifact
+stream_summary.json	588 bytes	intentional artifact
+worker.failed_auth.log	4466 bytes	ignored runtime log/pid
+worker.failed_auth_2.log	4466 bytes	ignored runtime log/pid
+worker.failed_jit_round.log	52868 bytes	ignored runtime log/pid
+worker.log	57343 bytes	ignored runtime log/pid
+worker.pid	5 bytes	ignored runtime log/pid

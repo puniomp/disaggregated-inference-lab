@@ -1,0 +1,26 @@
+## processes
+root        1704     715  1 05:18 pts/2    00:00:02 python3 -m dynamo.frontend --model-name llama3.1-8b-instruct
+root        1705     715 13 05:18 pts/2    00:00:21 python3 -m dynamo.sglang --model-path meta-llama/Llama-3.1-8B-Instruct --served-model-name llama3.1-8b-instruct --page-size 16 --tp-size 1 --dtype bfloat16 --context-length 16384 --mem-fraction-static 0.704 --max-prefill-tokens 16384 --schedule-policy fcfs --chunked-prefill-size 4096 --stream-interval 1 --trust-remote-code --enable-metrics --cuda-graph-backend-prefill=disabled
+## ports
+LISTEN 0      4096         0.0.0.0:8000       0.0.0.0:*    users:(("python3",pid=1704,fd=20))        
+LISTEN 0      511          0.0.0.0:8081       0.0.0.0:*    users:(("nginx",pid=82,fd=7))             
+## models
+{"object":"list","data":[{"id":"llama3.1-8b-instruct","object":"model","created":1791264072,"owned_by":"nvidia","context_window":16384}]}
+## health
+{"status":"healthy","endpoints":["dyn://dynamo.backend.clear_kv_blocks","dyn://dynamo.backend.generate","dyn://dynamo.backend.list_loras","dyn://dynamo.backend.load_lora","dyn://dynamo.backend.unload_lora"],"instances":[{"component":"backend","endpoint":"clear_kv_blocks","namespace":"dynamo","instance_id":5099387232919803540,"transport":{"tcp":"172.20.0.2:44703/46c4a9abae58d694/dynamo/backend/clear_kv_blocks"},"device_type":"cpu","request_plane_codec":"msgpack"},{"component":"backend","endpoint":"generate","namespace":"dynamo","instance_id":5099387232919803540,"transport":{"tcp":"172.20.0.2:44703/46c4a9abae58d694/dynamo/backend/generate"},"device_type":"cpu","request_plane_codec":"msgpack"},{"component":"backend","endpoint":"list_loras","namespace":"dynamo","instance_id":5099387232919803540,"transport":{"tcp":"172.20.0.2:44703/46c4a9abae58d694/dynamo/backend/list_loras"},"device_type":"cpu","request_plane_codec":"msgpack"},{"component":"backend","endpoint":"load_lora","namespace":"dynamo","instance_id":5099387232919803540,"transport":{"tcp":"172.20.0.2:44703/46c4a9abae58d694/dynamo/backend/load_lora"},"device_type":"cpu","request_plane_codec":"msgpack"},{"component":"backend","endpoint":"unload_lora","namespace":"dynamo","instance_id":5099387232919803540,"transport":{"tcp":"172.20.0.2:44703/46c4a9abae58d694/dynamo/backend/unload_lora"},"device_type":"cpu","request_plane_codec":"msgpack"}]}
+## gpu
+NVIDIA H100 NVL, 95830 MiB, 68076 MiB, 27244 MiB, 580.159.04
+## file discovery entries
+/tmp/dynamo_file_kv
+/tmp/dynamo_file_kv/v1
+/tmp/dynamo_file_kv/v1/event_channels
+/tmp/dynamo_file_kv/v1/event_channels/namespace%2Fdynamo%2Fcomponent%2Fbackend%2Fendpoint%2Fgenerate%2Ftopic%2Factive%5Fsequences%5Fevents%2F5a7656d1446da
+/tmp/dynamo_file_kv/v1/event_channels/namespace%2Fdynamo%2Fcomponent%2Fbackend%2Fendpoint%2Fgenerate%2Ftopic%2Fkv%5Fmetrics%2F214e065173523
+/tmp/dynamo_file_kv/v1/instances
+/tmp/dynamo_file_kv/v1/instances/dynamo%2Fbackend%2Fclear%5Fkv%5Fblocks%2F46c4a9abae58d694
+/tmp/dynamo_file_kv/v1/instances/dynamo%2Fbackend%2Fgenerate%2F46c4a9abae58d694
+/tmp/dynamo_file_kv/v1/instances/dynamo%2Fbackend%2Flist%5Floras%2F46c4a9abae58d694
+/tmp/dynamo_file_kv/v1/instances/dynamo%2Fbackend%2Fload%5Flora%2F46c4a9abae58d694
+/tmp/dynamo_file_kv/v1/instances/dynamo%2Fbackend%2Funload%5Flora%2F46c4a9abae58d694
+/tmp/dynamo_file_kv/v1/mdc
+/tmp/dynamo_file_kv/v1/mdc/dynamo%2Fbackend%2Fgenerate%2F46c4a9abae58d694

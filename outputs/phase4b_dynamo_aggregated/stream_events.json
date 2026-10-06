@@ -1,0 +1,1771 @@
+[
+  {
+    "t": 0.02882537618279457,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "In",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.03157496824860573,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.03698965162038803,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " context"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.04264121316373348,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " of"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.0482096578925848,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " Large"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.05384821444749832,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " Language"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.05937590450048447,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " Model"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.0650535561144352,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ("
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.07072204351425171,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "LL"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.07643136382102966,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "M"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.08218364417552948,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ")"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.08803885616362095,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " inference"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.09390484355390072,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ","
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.09973854012787342,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " '"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.1056060865521431,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "pref"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.11146363615989685,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ill"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.11734932102262974,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "'"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.12323318794369698,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " refers"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.12930170446634293,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " to"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.1350883524864912,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.14092696271836758,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " process"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.14680041559040546,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " of"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.1526746116578579,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " initializing"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.1585822757333517,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.164457680657506,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " model"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.17033129557967186,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "'s"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.17621655575931072,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " internal"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.1820401642471552,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " state"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.18786927871406078,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " with"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.19368421286344528,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " a"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.19952323660254478,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " given"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.20540542341768742,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " input"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.2112040724605322,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " or"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.21702179312705994,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " context"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.22286431677639484,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ","
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.22866231203079224,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " allowing"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.23450911603868008,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.24031783267855644,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " model"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.24613424204289913,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " to"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.25194686464965343,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " generate"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.2579808570444584,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " more"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.26378340274095535,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " coherent"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.2695909645408392,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " and"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.2780680600553751,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " relevant"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.28125528804957867,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " responses"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.2870046366006136,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "."
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.29281894117593765,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " '"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.299055989831686,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "Decode"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3046865165233612,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "'"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3104769289493561,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " is"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.31655381992459297,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.32212280109524727,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " final"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3278579004108906,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " step"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.33374585770070553,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " in"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.33953379839658737,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " L"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.34535606019198895,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "LM"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3511590603739023,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " inference"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.35700565949082375,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ","
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3627994768321514,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " where"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3687344118952751,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3744925409555435,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " model"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3803285602480173,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " generates"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.38610953092575073,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " text"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3919573277235031,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " based"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.3979330211877823,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " on"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4037127085030079,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.40952409245073795,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " pre"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4153793714940548,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "-filled"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4212058521807194,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " internal"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4270427357405424,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " state"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.43291111662983894,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ","
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.438744131475687,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " often"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.444513151422143,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " using"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4503681529313326,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " a"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.45618031546473503,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " beam"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4620336089283228,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " search"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.46789428032934666,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " or"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4737819842994213,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " sampling"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4797246437519789,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " algorithm"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4856122173368931,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " to"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.4914527963846922,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " produce"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.49739832431077957,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " a"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5033078715205193,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " sequence"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5091711319983006,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " of"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5150957386940718,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " tokens"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5209970120340586,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " that"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.526904184371233,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " form"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5328098330646753,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5386516638100147,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " final"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5445114113390446,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " output"
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5504266489297152,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "."
+          },
+          "finish_reason": null,
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5577263850718737,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {},
+          "finish_reason": "stop",
+          "logprobs": null
+        }
+      ],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk"
+    }
+  },
+  {
+    "t": 0.5588894784450531,
+    "data": {
+      "id": "chatcmpl-b3f75177-9c55-49f5-b9bb-db9457fc59eb",
+      "choices": [],
+      "created": 1791264024,
+      "model": "llama3.1-8b-instruct",
+      "object": "chat.completion.chunk",
+      "usage": {
+        "prompt_tokens": 52,
+        "completion_tokens": 92,
+        "total_tokens": 144,
+        "prompt_tokens_details": {
+          "cached_tokens": 16
+        }
+      }
+    }
+  },
+  {
+    "t": 0.5589467827230692,
+    "done": true
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-c9b0d8f2-7464-4f3b-bf63-284776e107d8",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "content": "Dynamo adds a caching layer in front of an LLM (Large Language Model) worker to improve performance by reducing the number of requests made to the model.",
+        "refusal": null,
+        "role": "assistant"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "created": 1791264017,
+  "model": "llama3.1-8b-instruct",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 52,
+    "completion_tokens": 33,
+    "total_tokens": 85
+  }
+}

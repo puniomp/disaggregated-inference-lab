@@ -2,17 +2,18 @@
 
 Hands-on lab for learning modern LLM serving architecture through incremental experiments.
 
-Current scope: Phase 0 through Phase 4A.
+Current scope: Phase 0 through Phase 4B.
 
 - Phase 0 validates the architecture vocabulary and upstream documentation assumptions.
 - Phase 1 runs an aggregated SGLang baseline on one NVIDIA GPU.
 - Phase 2 benchmarks that aggregated SGLang baseline under different workloads and concurrency levels.
 - Phase 3 measures mixed prefill/decode interference and chunked-prefill tuning. The RTX 4090 run is preserved as historical evidence, and the H100 NVL chunk-size sweep is the controlled baseline for later distributed-serving work.
 - Phase 4A transitions to `meta-llama/Llama-3.1-8B-Instruct` and validates a standalone one-GPU aggregated SGLang baseline.
+- Phase 4B introduces Dynamo in front of SGLang while keeping serving aggregated on one H100.
 
-Next steps are Phase 4B, Dynamo + SGLang aggregated on one GPU; Phase 5, Dynamo prefill/decode disaggregation on separate GPUs; and Phase 6, a controlled aggregated-vs-P/D comparison.
+Next steps are Phase 5, Dynamo prefill/decode disaggregation on separate GPUs, and Phase 6, a controlled aggregated-vs-P/D comparison.
 
-This repository intentionally does not yet include Dynamo, NIXL, prefill/decode disaggregation, multi-GPU serving, or Kubernetes implementations.
+This repository intentionally does not yet include P/D disaggregation, multi-GPU serving, or Kubernetes implementations.
 
 ## Validated Environment
 
@@ -76,6 +77,7 @@ Important documents:
 - `docs/phase2_sglang_benchmarking.md`: Phase 2 methodology, measured results, interpretations, and limitations.
 - `docs/phase3_chunked_prefill_interference.md`: Phase 3 prefill/decode interference experiment and matched chunked-prefill A/B.
 - `docs/phase4a_llama31_sglang_baseline.md`: Phase 4A standalone Llama 3.1 8B aggregated SGLang baseline.
+- `docs/phase4b_dynamo_sglang_aggregated.md`: Phase 4B Dynamo + SGLang aggregated functional baseline.
 
 ## Preserved Phase 2 Outputs
 
@@ -168,3 +170,16 @@ Client -> SGLang 0.5.21 -> Llama 3.1 8B Instruct -> 1x H100 NVL
 Prefill and decode remain colocated in one SGLang worker on one GPU. Dynamo is not installed or running, and P/D disaggregation is not configured.
 
 This is a functional baseline only. The single-request/concurrency-1 validation proves model load, OpenAI-compatible request handling, streaming, usage accounting, and benchmark instrumentation continuity. It is not a performance study, and its absolute values should not be compared against the earlier Qwen3-0.6B runs.
+
+## Phase 4B Status
+
+Phase 4B is complete. It adds Dynamo as the OpenAI-compatible frontend, discovery layer, and router in front of a single aggregated SGLang worker:
+
+```text
+Client -> Dynamo frontend -> SGLang worker -> Llama 3.1 8B Instruct -> 1x H100 NVL
+```
+
+Prefill and decode still run in the same SGLang worker on the same GPU. NIXL is installed in the Dynamo environment, but it is not part of this aggregated request path and no cross-GPU KV transfer occurs. The key validation signal is that Dynamo reported the same backend worker ID for prefill and decode on the functional request.
+
+This is a functional serving checkpoint, not a performance comparison with Phase 4A.
+
